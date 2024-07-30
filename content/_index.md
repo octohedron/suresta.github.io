@@ -10,15 +10,15 @@ design:
 sections:
   - block: hero
     content:
-      title: Build Your Landing Pages with Hugo Blox
-      text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
+      title: "Software Reliability and Assurance as a Service"
+      text: SIMPLE SUBSCRIPTION SERVICE. CANCEL ANY TIME.
       primary_action:
         text: Get Started
         url: https://suresta.com/templates/
         icon: rocket-launch
       secondary_action:
         text: Read the docs
-        url: https://docs.hugoblox.com
+        url: https://docs.suresta.com
       announcement:
         text: "Announcing the release of version 1."
         link:
@@ -40,18 +40,18 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: "1M+"
+        - statistic: "1B+"
           description: |
-            Websites built  
-            with Hugo Blox
-        - statistic: "10k+"
+            Users of our reliable  
+            software solutions
+        - statistic: "100k+"
           description: |
-            GitHub stars  
+            Incidents resolved  
             since 2016
-        - statistic: "3k+"
+        - statistic: "300+"
           description: |
-            Discord community  
-            for support
+            Projects supported  
+            in various platforms
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"

@@ -33,11 +33,11 @@ Welcome 👋
 ### Get Started
 
 - 👉 [**Create a new site**](https://suresta.com/templates/)
-- 📚 [**Personalize your site**](https://docs.hugoblox.com/)
+- 📚 [**Personalize your site**](https://docs.suresta.com/)
 - 💬 [Chat with the **Hugo Blox community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
 - 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@Gustavo](https://twitter.com/Gustavo) #MadeWithHugoBlox
 - 💡 [Request a **feature** or report a **bug** for _Hugo Blox_](https://suresta.com/hugo-blox-builder/issues)
-- ⬆️ **Updating Hugo Blox?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://suresta.com/hugo-blox-builder/releases)
+- ⬆️ **Updating Hugo Blox?** View the [Update Guide](https://docs.suresta.com/reference/update/) and [Release Notes](https://suresta.com/hugo-blox-builder/releases)
 
 ## Crowd-funded open-source software
 
@@ -57,10 +57,10 @@ As a token of appreciation for sponsoring, you can **unlock [these](https://sure
 
 ## Features
 
-- **Page builder** - Create _anything_ with no-code [**blocks**](https://suresta.com/blocks/) and [**elements**](https://docs.hugoblox.com/reference/markdown/)
+- **Page builder** - Create _anything_ with no-code [**blocks**](https://suresta.com/blocks/) and [**elements**](https://docs.suresta.com/reference/markdown/)
 - **Edit any type of content** - Blog posts, publications, talks, slides, projects, and more!
-- **Create content** in [**Markdown**](https://docs.hugoblox.com/reference/markdown/), [**Jupyter**](https://docs.hugoblox.com/getting-started/cms/), or [**RStudio**](https://docs.hugoblox.com/getting-started/cms/)
-- **Plugin System** - Fully customizable [**color** and **font themes**](https://docs.hugoblox.com/getting-started/customize/)
+- **Create content** in [**Markdown**](https://docs.suresta.com/reference/markdown/), [**Jupyter**](https://docs.suresta.com/getting-started/cms/), or [**RStudio**](https://docs.suresta.com/getting-started/cms/)
+- **Plugin System** - Fully customizable [**color** and **font themes**](https://docs.suresta.com/getting-started/customize/)
 - **Display Code and Math** - Code syntax highlighting and LaTeX math supported
 - **Integrations** - [Google Analytics](https://analytics.google.com), [Disqus commenting](https://disqus.com), Maps, Contact Forms, and more!
 - **Beautiful Site** - Simple and refreshing one-page design
@@ -77,7 +77,7 @@ As a token of appreciation for sponsoring, you can **unlock [these](https://sure
 
 Hugo Blox and its templates come with **automatic day (light) and night (dark) mode** built-in. Visitors can choose their preferred mode by clicking the sun/moon icon in the header.
 
-[Choose a stunning **theme** and **font**](https://docs.hugoblox.com/getting-started/customize/) for your site. Themes are fully customizable.
+[Choose a stunning **theme** and **font**](https://docs.suresta.com/getting-started/customize/) for your site. Themes are fully customizable.
 
 ## License
 
