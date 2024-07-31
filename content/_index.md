@@ -118,7 +118,7 @@ sections:
       title: ""
       text: ""
       items:
-        - name: "Hugo Smith"
+        - name: "Richard Smith"
           role: "Marketing Executive at X"
           # Upload image to `assets/media/` and reference the filename here
           image: "testimonial-1.jpg"
