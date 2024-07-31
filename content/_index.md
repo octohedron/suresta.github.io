@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Read the docs
-        url: https://suresta.com
+        url: https://suresta.com/
       announcement:
         text: "Announcing the release of version 1."
         link:
@@ -62,7 +62,7 @@ sections:
     id: features
     content:
       title: Features
-      text: Build your site with blocks 🧱
+      text: Build your site with blocks
       items:
         - name: Optimized SEO
           icon: magnifying-glass
