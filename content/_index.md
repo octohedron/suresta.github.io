@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: "Software Reliability and Assurance as a Service"
-      text: SIMPLE SUBSCRIPTION SCHEME. CANCEL ANY TIME.
+      text: SIMPLE SUBSCRIPTION SCHEME. CANCEL ANY TIME. 🤓
       primary_action:
         text: Get Started
         url: https://suresta.com/templates/
