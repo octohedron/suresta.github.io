@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Read the docs
-        url: https://docs.suresta.com
+        url: https://suresta.com/docs
       announcement:
         text: "Announcing the release of version 1."
         link:
