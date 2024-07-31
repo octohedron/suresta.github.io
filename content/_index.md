@@ -14,11 +14,11 @@ sections:
       text: SIMPLE SUBSCRIPTION SCHEME. CANCEL ANY TIME.
       primary_action:
         text: Get Started
-        url: https://suresta.com/templates/
+        url: https://suresta.com/contact/
         icon: rocket-launch
       secondary_action:
         text: Read the docs
-        url: https://suresta.com/docs
+        url: https://suresta.com
       announcement:
         text: "Announcing the release of version 1."
         link:
