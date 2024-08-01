@@ -28,10 +28,12 @@
         <label class="sr-only" for="inputMessage">{{ i18n "contact_message" }}</label>
         <textarea name="message" class="w-full p-2 border border-gray-300 rounded" id="inputMessage" rows="5" placeholder="{{ i18n "contact_message" | default "Message" }}" required></textarea>
       </div>
+      <!-- 
       <div class="mb-4">
         <label class="sr-only" for="fileUpload">{{ i18n "contact_attachment" }}</label>
         <input type="file" name="file" class="w-full p-2 border border-gray-300 rounded" id="fileUpload" placeholder="{{ i18n "contact_attachment" | default "Attach file" }}">
       </div>
+       -->
       <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
       <button type="submit" class="w-full py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">{{ i18n "contact_send" | default "Send" }}</button>
     </form>

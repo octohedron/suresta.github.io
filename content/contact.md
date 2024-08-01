@@ -1,5 +1,5 @@
 ---
-title: My page
+title: Contact
 type: landing
 
 sections:
@@ -9,25 +9,24 @@ sections:
       title: Contact
       subtitle: ''
       text: ''
-      email: test@example.org
-      phone: 888 888 88 88
+      email: operations@suresta.com
+      phone: +34 641 49 41 53
       appointment_url: 'https://calendly.com'
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+        street: Escriptor Abu Salt, 1
+        city: Valencia
+        region: Valencia
+        postcode: '46009'
+        country: Spain
+        country_code: ES
+      directions: Enter Building 1 and take the stairs to Office 10 on Floor 2
       office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
+        - 'Monday to Friday 09:00 to 17:00'
       contact_links:
         - icon: x
           icon_pack: brands
-          name: DM Me
-          link: 'https://twitter.com/Twitter'
+          name: DM Us
+          link: 'https://twitter.com/suresta'
       autolink: true
       form:
         provider: netlify
