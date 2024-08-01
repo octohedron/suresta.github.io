@@ -11,45 +11,26 @@ sections:
   - block: hero
     content:
       title: "Software Reliability and Assurance as a Service"
-      text: SIMPLE SUBSCRIPTION SCHEME. CANCEL ANY TIME.
+      text: SIMPLE SUBSCRIPTION, CANCEL ANY TIME.
       primary_action:
         text: Get Started
         url: https://suresta.com/contact/
         icon: rocket-launch
       secondary_action:
-        text: Read the docs
+        text: Our services
         url: https://suresta.com/
       announcement:
         text: "Announcing the release of version 2."
         link:
           text: "Read more"
           url: "/blog/"
-  - block: markdown
-    id: section-1
-    content:
-      title: Section 1
-      subtitle: A subtitle
-      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
-        margin: [0, 0, 0, 0]
-      # For full-screen, add `min-h-screen` below
-      css_class: "dark"
-      background:
-        color: "navy"
-        image:
-          # Add your image background to `assets/media/`.
-          filename: bg-triangles.svg
-          filters:
-            brightness: 0.5
   - block: stats
     content:
       items:
-        - statistic: "1B+"
+        - statistic: "10+"
           description: |
-            Users of our reliable  
-            software solutions
+            Years of experience  
+            among all our team members
         - statistic: "100k+"
           description: |
             Incidents resolved  
@@ -68,26 +49,26 @@ sections:
     id: features
     content:
       title: Features
-      text: Build your site with blocks
+      text: Choose among our wide range of services 
       items:
-        - name: Optimized SEO
+        - name: Optimize Security
           icon: magnifying-glass
-          description: Automatic sitemaps, RSS feeds, and rich metadata take the pain out of SEO and syndication.
-        - name: Fast
+          description: Add tracing, automated monitoring, and other features to mitigate risk, employ proactive measures, and manage your exposure
+        - name: Resolve issues guided by specialists
           icon: bolt
-          description: Super fast page load with Tailwind CSS and super fast site building with Hugo.
-        - name: Easy
+          description: Options for on-call support and personalized assistance, as well as alert systems and observability tools to resolve issues quickly and smoothly
+        - name: Cloud
           icon: sparkles
-          description: One-click deployment to GitHub Pages. Have your new website live within 5 minutes!
-        - name: No-Code
+          description: Manage cloud capacity, cost management, and debugging with services like Azure, Google Cloud, AWS, and Kubernetes
+        - name: Coding Assistance
           icon: code-bracket
-          description: Edit and design your site just using rich text (Markdown) and configurable YAML parameters.
+          description: Confer with our experts in languages like Golang, Python, Typescript, to troubleshoot and refactor your code
         - name: Highly Rated
           icon: star
-          description: Rated 5-stars by the community.
-        - name: Swappable Blocks
+          description: World-class expertise, including projects with Goldman Sachs, The European Patent Office, and dozens of other industry leaders
+        - name: Personalize and Customize
           icon: rectangle-group
-          description: Build your pages with blocks - no coding required!
+          description: Our world-class customer service team will work with you to find a subscription package that works for you and your needs, no more no less
   - block: cta-image-paragraph
     id: solutions
     content:
