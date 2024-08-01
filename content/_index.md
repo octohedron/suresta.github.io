@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: "Home"
 date: 2023-10-24
 type: landing
 
@@ -24,6 +24,12 @@ sections:
         link:
           text: "Read more"
           url: "/blog/"
+  - block: markdown
+    id: section-1
+    content:
+      title: Section 1
+      subtitle: A subtitle
+      text: Add any **markdown** formatted content here - text, images, videos, galleries - and even HTML code!
     design:
       spacing:
         padding: [0, 0, 0, 0]
@@ -134,7 +140,7 @@ sections:
         padding: ["6rem", 0, 0, 0]
   - block: cta-card
     content:
-      title: Build your future-proof website
+      title: "Pizza"
       text: As easy as 1, 2, 3!
       button:
         text: Get Started
@@ -145,3 +151,4 @@ sections:
         css_class: "bg-primary-700"
         css_style: ""
 ---
+
