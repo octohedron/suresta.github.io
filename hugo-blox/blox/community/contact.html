@@ -8,7 +8,7 @@
 {{ $autolink := default true $block.content.autolink }}
 {{ $data := $block.content }}
 
-<section class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+<section class="py-8 px-4 mx-auto max-w-screen-md sm:py-16 lg:px-6">
   {{ with $block.content.text }}<p>{{ . | emojify | $page.RenderString }}</p>{{ end }}
   <div class="mb-6">
     <form id="contact-form">

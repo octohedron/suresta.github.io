@@ -9,6 +9,9 @@ main:
   - name: Features
     url: /#features
     weight: 20
+  - name: Contact
+    url: /contact/
+    weight: 20
   - name: Solutions
     url: /#solutions
     weight: 30
