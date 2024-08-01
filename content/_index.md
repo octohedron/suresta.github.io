@@ -14,7 +14,7 @@ sections:
       text: SIMPLE SUBSCRIPTION, CANCEL ANY TIME.
       primary_action:
         text: Get Started
-        url: https://suresta.com/contact/
+        url: /contact/
         icon: rocket-launch
       secondary_action:
         text: Our services
