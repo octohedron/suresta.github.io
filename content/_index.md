@@ -105,10 +105,10 @@ sections:
   - block: testimonials
     content:
       title: "Our Team Members' Clients"
-      text: "Goldman Sachs, iHealth, inzpire.me, CECOTEC, POWER2DM, NTT DATA, Salzburg Research, The European Patent Officegit " 
+      text: "" 
       items:
-        - name: ""
-          role: "Team Lead at NN Investment Partners"
+        - name: "Richard Jefferson"
+          role: "Team Lead"
           # Upload image to `assets/media/` and reference the filename here
           image: ""
           text: ""
