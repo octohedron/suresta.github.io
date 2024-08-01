@@ -10,7 +10,7 @@ design:
 sections:
   - block: hero
     content:
-      title: "Software Reliability and Assurance as a Service"
+      title: "Software Reliability, Integrity, and Assistance"
       text: SIMPLE SUBSCRIPTION, CANCEL ANY TIME.
       primary_action:
         text: Get Started
@@ -54,12 +54,12 @@ sections:
         - name: Optimize Security
           icon: magnifying-glass
           description: Options include incident reports and post mortems, as well as tracing, automated monitoring, and other features to mitigate risk, employ proactive measures, and manage your exposure
-        - name: Resolve issues guided by specialists
+        - name: Resolve issues through specialists
           icon: bolt
-          description: Options for on-call support and personalized assistance, as well as alert systems and observability tools to resolve issues quickly and smoothly
+          description: Discover on-call support and personalized assistance, as well as alert systems and observability tools to find and solve problems quickly
         - name: Cloud
           icon: sparkles
-          description: Manage cloud capacity, cost management, and debugging with services like Azure, Google Cloud, AWS, and Kubernetes
+          description: Manage cloud capacity, costs, and debugging in services like Azure, Google Cloud, AWS, and Kubernetes
         - name: Coding Assistance
           icon: code-bracket
           description: Confer with our experts in languages like Golang, Python, Typescript, Javascript, Java, and others to troubleshoot and refactor your code
@@ -74,24 +74,26 @@ sections:
     content:
       items:
         - title: Who are we?
-          text: Suresta is a boutique site reliability engineering (SRE) firm for businesses of all sizes
+          text: Suresta is a boutique software agency, specializing in site reliability engineering (SRE). The link between development and operations is critical, we help affirm it
           feature_icon: check
           features:
-            - "Bridging the gap between developers and operations"
-            - "Providing peace of mind on the integrity and realiability of your projects"
+            - "Bridge the gap between developers and operations"
+            - "Avoid outages"
+            - "Provide peace of mind on the integrity and realiability of your projects"
+            - "Balance reliability and progress"
             
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
             text: Get Started
             url: https://suresta.com/templates/
-        - title: Why SRE?
-          text: The link between development and operations is critical, we help affirm it
+        - title: Why a subscription?
+          text: Our unique payment model works differently than other firms and developers. Rather than the high fees of a contractor, or the piles of paperwork and rising costs to onboard an employee, we offer flexibility without sacrificing value
           feature_icon: bolt
           features:
-            - "Avoid outages"
-            - "Balance realiability and progress"
-            - "Manage incidents and respond quickly"
+            - "No contracts laden with obligations and high payments"
+            - "No HR paperwork or benefits to file for new employees"
+            - "Services fitted to your needs, for as long as you need it"
           # Upload image to `assets/media/` and reference the filename here
           image: coffee.jpg
           button:
@@ -102,7 +104,7 @@ sections:
       css_class: "bg-gray-100 dark:bg-gray-900"
   - block: testimonials
     content:
-      title: "Testomonials of our development team"
+      title: "Testimonials of our development team"
       text: ""
       items:
         - name: ""
@@ -121,8 +123,8 @@ sections:
         padding: ["6rem", 0, 0, 0]
   - block: cta-card
     content:
-      title: "Pizza"
-      text: As easy as 1, 2, 3!
+      title: "Get Started with a Free Consultation"
+      text: Contact us below
       button:
         text: Get Started
         url: https://suresta.com/templates/
