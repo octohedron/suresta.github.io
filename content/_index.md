@@ -40,15 +40,15 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: "13+"
+        - statistic: "1B+"
           description: |
-            Years of experience  
-            among each of our team members
-        - statistic: "200k+"
+            Users of our reliable  
+            software solutions
+        - statistic: "100k+"
           description: |
             Incidents resolved  
-            since 2014
-        - statistic: "40+"
+            since 2016
+        - statistic: "300+"
           description: |
             Projects supported  
             in various platforms
