@@ -27,15 +27,15 @@ sections:
   - block: stats
     content:
       items:
-        - statistic: "10+"
+        - statistic: "13+"
           description: |
             Years of experience  
-            among all our team members
-        - statistic: "100k+"
+            among each of our team members
+        - statistic: "200k+"
           description: |
             Incidents resolved  
-            since 2016
-        - statistic: "300+"
+            since 2014
+        - statistic: "40+"
           description: |
             Projects supported  
             in various platforms
@@ -74,7 +74,7 @@ sections:
     content:
       items:
         - title: Who are we?
-          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE). The link between development and operations is critical, we're here to maintain it
+          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE). The link between development and operations is critical, and we're the ones who help you build it.
           feature_icon: check
           features:
             - "Bridge the gap between developers and operations"
@@ -105,7 +105,7 @@ sections:
   - block: testimonials
     content:
       title: "Our Team Members' Clients"
-      text: "Goldman Sachs"
+      text: "Goldman Sachs, iHealth, inzpire.me, CECOTEC, POWER2DM, NTT DATA, Salzburg Research, The European Patent Office " 
       items:
         - name: ""
           role: "Team Lead at NN Investment Partners"
