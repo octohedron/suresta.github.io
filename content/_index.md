@@ -74,7 +74,7 @@ sections:
     content:
       items:
         - title: Who are we?
-          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE). The link between development and operations is critical, and we're here to help you build it.
+          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE) for all types of software. The link between development and operations is critical, and we're here to help you build it.
           feature_icon: check
           features:
             - "Bridge the gap between developers and operations"
