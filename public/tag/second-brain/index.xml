@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Second Brain | Suresta | Software reliability as a service</title>
+    <title>Second Brain | Software reliability as a service</title>
     <link>https://suresta.com/tag/second-brain/</link>
       <atom:link href="https://suresta.com/tag/second-brain/index.xml" rel="self" type="application/rss+xml" />
     <description>Second Brain</description>

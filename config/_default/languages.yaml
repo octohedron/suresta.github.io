@@ -6,17 +6,57 @@
 en:
   languageCode: en-us
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/en
+  title: "Software reliability as a service"
+  params:
+    description: "Subscribe to our novelty subscription service for software reliability"
+  menu:
+    main:
+      - name: Home
+        url: /#top
+        weight: 10
+      - name: Features
+        url: /#features
+        weight: 20
+      - name: Contact
+        url: /contact/
+        weight: 20
+      - name: Solutions
+        url: /#solutions
+        weight: 30
+      - name: Resources
+        weight: 40
+        hasChildren: true
+      - parent: Resources
+        name: Blog
+        url: blog/
+
 
 # Uncomment the lines below to configure your website in a second language.
 es:
- languageCode: es-es
- contentDir: content/es
- title: "Tu servicio de subscripción para el mantenimiento y buen funcionamiento del software"
- params:
-   description: "Suscríbete a nuestro novedoso sistema de desarrollo de software"
- menu:
-   main:
-     - name: Sobre nosotros
-       url: '#about'
-       weight: 1
+  languageCode: es-es
+  contentDir: content/es
+  title: "Tu servicio de subscripción para el mantenimiento y buen funcionamiento del software"
+  params:
+    description: "Suscríbete a nuestro novedoso sistema de desarrollo de software"
+  menu:
+    main:
+      - name: Inicio
+        url: /#top
+        weight: 10
+      - name: Servicios
+        url: /#features
+        weight: 20
+      - name: Contacto
+        url: /contact/
+        weight: 20
+      - name: Soluciones
+        url: /#solutions
+        weight: 30
+      - name: Material
+        weight: 40
+        hasChildren: true
+      - parent: Material
+        name: Blog
+        url: blog/
+

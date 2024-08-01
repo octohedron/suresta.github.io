@@ -5,30 +5,100 @@
     <loc>https://suresta.com/privacy/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/privacy/"
+                />
   </url><url>
     <loc>https://suresta.com/terms/</loc>
     <lastmod>2023-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/terms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/terms/"
+                />
   </url><url>
     <loc>https://suresta.com/blog/get-started/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/blog/get-started/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/blog/get-started/"
+                />
   </url><url>
     <loc>https://suresta.com/tag/academic/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/tag/academic/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/tag/academic/"
+                />
   </url><url>
     <loc>https://suresta.com/blog/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/blog/"
+                />
   </url><url>
     <loc>https://suresta.com/tag/hugo-blox/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/tag/hugo-blox/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/tag/hugo-blox/"
+                />
   </url><url>
     <loc>https://suresta.com/tag/markdown/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/tag/markdown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/tag/markdown/"
+                />
   </url><url>
     <loc>https://suresta.com/tags/</loc>
     <lastmod>2023-10-27T00:00:00+00:00</lastmod>
@@ -47,22 +117,72 @@
     <loc>https://suresta.com/tag/second-brain/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/tag/second-brain/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/tag/second-brain/"
+                />
   </url><url>
     <loc>https://suresta.com/blog/second-brain/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/blog/second-brain/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/blog/second-brain/"
+                />
   </url><url>
     <loc>https://suresta.com/blog/data-visualization/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/blog/data-visualization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/blog/data-visualization/"
+                />
   </url><url>
     <loc>https://suresta.com/tag/hugo/</loc>
     <lastmod>2023-10-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/tag/hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/tag/hugo/"
+                />
   </url><url>
     <loc>https://suresta.com/blog/teach-courses/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/blog/teach-courses/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/blog/teach-courses/"
+                />
   </url><url>
     <loc>https://suresta.com/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
@@ -81,10 +201,30 @@
     <loc>https://suresta.com/tag/hugo-blox-builder/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/tag/hugo-blox-builder/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/tag/hugo-blox-builder/"
+                />
   </url><url>
     <loc>https://suresta.com/blog/project-management/</loc>
     <lastmod>2023-10-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/blog/project-management/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/blog/project-management/"
+                />
   </url><url>
     <loc>https://suresta.com/categories/</loc>
     <changefreq>weekly</changefreq>
@@ -101,5 +241,15 @@
   </url><url>
     <loc>https://suresta.com/contact/</loc>
     <changefreq>weekly</changefreq>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="https://suresta.com/es/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://suresta.com/contact/"
+                />
   </url>
 </urlset>
