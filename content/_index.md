@@ -20,7 +20,7 @@ sections:
         text: Read the docs
         url: https://suresta.com/
       announcement:
-        text: "Announcing the release of version 1."
+        text: "Announcing the release of version 2."
         link:
           text: "Read more"
           url: "/blog/"
