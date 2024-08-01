@@ -37,7 +37,7 @@ header:
     button:
       enable: true
       text: "Get Started"
-      url: "https://suresta.com/"
+      url: "/contact/"
     show_search: true
     show_theme_chooser: true
 

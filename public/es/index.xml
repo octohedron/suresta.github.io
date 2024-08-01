@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tu servicio de subscripción para el mantenimiento y buen funcionamiento del software</title>
-    <link>http://localhost:1313/es/</link>
-      <atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://suresta.com/es/</link>
+      <atom:link href="https://suresta.com/es/index.xml" rel="self" type="application/rss+xml" />
     <description>Tu servicio de subscripción para el mantenimiento y buen funcionamiento del software</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>es-es</language>
     <image>
-      <url>http://localhost:1313/media/logo_huf2b74e87adfd3d35645764209d61cefa_5082_300x300_fit_lanczos_3.png</url>
+      <url>https://suresta.com/media/logo_huf2b74e87adfd3d35645764209d61cefa_5082_300x300_fit_lanczos_3.png</url>
       <title>Tu servicio de subscripción para el mantenimiento y buen funcionamiento del software</title>
-      <link>http://localhost:1313/es/</link>
+      <link>https://suresta.com/es/</link>
     </image>
     
   </channel>
