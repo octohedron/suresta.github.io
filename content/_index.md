@@ -74,7 +74,7 @@ sections:
     content:
       items:
         - title: Who are we?
-          text: Suresta is a boutique software agency, specializing in site reliability engineering (SRE). The link between development and operations is critical, we help affirm it
+          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE). The link between development and operations is critical, we're here to maintain it
           feature_icon: check
           features:
             - "Bridge the gap between developers and operations"
@@ -85,27 +85,27 @@ sections:
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
-            text: Get Started
-            url: https://suresta.com/templates/
+            text:  Read More about SRE
+            url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
         - title: Why a subscription?
-          text: Our unique payment model works differently than other firms and developers. Rather than the high fees of a contractor, or the piles of paperwork and rising costs to onboard an employee, we offer flexibility without sacrificing value
+          text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexibility without sacrificing value
           feature_icon: bolt
           features:
-            - "No contracts laden with obligations and high payments"
-            - "No HR paperwork or benefits to file for new employees"
+            - "No contracts laden with obligations, contingincies, or high payments"
+            - "No HR paperwork or lengthy training for new employees"
             - "Services fitted to your needs, for as long as you need it"
           # Upload image to `assets/media/` and reference the filename here
           image: coffee.jpg
           button:
-            text: Read More about SRE
-            url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
+            text: Get Started
+            url: https://suresta.com/templates/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
   - block: testimonials
     content:
-      title: "Testimonials of our development team"
-      text: ""
+      title: "Our Team Members' Clients"
+      text: "Goldman Sachs"
       items:
         - name: ""
           role: "Team Lead at NN Investment Partners"
