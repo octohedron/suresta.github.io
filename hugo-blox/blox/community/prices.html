@@ -19,7 +19,7 @@
       {{ range $index, $item := . }}
         <div class="relative w-full">
           {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
-          <div class="bg-white dark:bg-gray-800 shadow-lg rounded-3xl overflow-hidden transform transition duration-300 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
+          <div class="bg-white dark:bg-gray-800 shadow-lg rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
             
             <div class="item {{- with $item.is_primary }} item-primary{{ end }} p-8">
               
