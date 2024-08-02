@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Our services
-        url: https://suresta.com/
+        url: '/#features'
       announcement:
         text: "Announcing the release of version 2."
         link:
@@ -61,7 +61,7 @@ sections:
   - block: features
     id: features
     content:
-      title: Features
+      title: Services
       text: Our team offers dozens of technical and business services to suit your needs 
       items:
         - name: Optimize Security
@@ -76,9 +76,9 @@ sections:
         - name: Coding Assistance
           icon: code-bracket
           description: Confer with our experts in languages like Golang, Python, Typescript, Javascript, Java, and others to troubleshoot and refactor your code
-        - name: Highly Rated
+        - name: Unparalleled Expertise
           icon: star
-          description: World-class expertise, including projects with Goldman Sachs, The European Patent Office, and dozens of other industry leaders
+          description: Our services are provided by industry-experts, bringing with them prior experience in a range of industries, from healthcare and banking, to mobile apps and customer service  
         - name: Personalize and Customize
           icon: rectangle-group
           description: Our world-class customer service team will work with you to find a subscription package that works for you and your needs, no more no less
@@ -87,13 +87,13 @@ sections:
     content:
       items:
         - title: Who are we?
-          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE) for all types of software. The link between development and operations is critical, and we're here to help you build it.
+          text: Suresta is a boutique software agency based out of Valencia, Spain, specializing in site reliability engineering (SRE) for all types of software and IT projects. The link between development and operations is critical, and we're here to help you build it.
           feature_icon: check
           features:
-            - "Bridge the gap between developers and operations"
+            - "Balance reliability and progress"
             - "Avoid outages"
             - "Provide peace of mind on the integrity and realiability of your projects"
-            - "Balance reliability and progress"
+            - "Bridge the gap between developers and operations"
             
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
@@ -101,7 +101,7 @@ sections:
             text:  Read More about SRE
             url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
         - title: Why a subscription?
-          text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexibility without sacrificing value
+          text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexible services without sacrificing value
           feature_icon: bolt
           features:
             - "No contracts laden with obligations, contingincies, or high payments"
