@@ -13,12 +13,36 @@
   <div class="mb-6">
     <form id="contact-form">
       <div class="mb-4">
-        <label class="sr-only" for="inputName">{{ i18n "contact_name" }}</label>
-        <input type="text" name="name" class="w-full p-2 border border-gray-300 rounded" id="inputName" placeholder="{{ i18n "contact_name" | default "Name" }}" required>
+        <label class="sr-only" for="inputCompanyName">{{ i18n "contact_company" }}</label>
+        <input type="text" name="company" class="w-full p-2 border border-gray-300 rounded" id="inputCompanyName" placeholder="{{ i18n "contact_company" | default "Company Name" }}" required>
+      </div>
+      <div class="mb-4">
+        <label class="sr-only" for="inputFirstName">{{ i18n "contact_first_name" }}</label>
+        <input type="text" name="first_name" class="w-full p-2 border border-gray-300 rounded" id="inputFirstName" placeholder="{{ i18n "contact_first_name" | default "First Name" }}" required>
+      </div>
+      <div class="mb-4">
+        <label class="sr-only" for="inputLastName">{{ i18n "contact_last_name" }}</label>
+        <input type="text" name="last_name" class="w-full p-2 border border-gray-300 rounded" id="inputLastName" placeholder="{{ i18n "contact_last_name" | default "Last Name" }}" required>
       </div>
       <div class="mb-4">
         <label class="sr-only" for="inputEmail">{{ i18n "contact_email" }}</label>
         <input type="email" name="email" class="w-full p-2 border border-gray-300 rounded" id="inputEmail" placeholder="{{ i18n "contact_email" | default "Email" }}" required>
+      </div>
+      <div class="mb-4">
+        <label class="sr-only" for="inputPhoneNumber">{{ i18n "contact_phone" }}</label>
+        <input type="text" name="phone" class="w-full p-2 border border-gray-300 rounded" id="inputPhoneNumber" placeholder="{{ i18n "contact_phone" | default "Phone Number" }}" required>
+      </div>
+      <div class="mb-4">
+        <label class="sr-only" for="inputWebsite">{{ i18n "contact_website" }}</label>
+        <input type="url" name="website" class="w-full p-2 border border-gray-300 rounded" id="inputWebsite" placeholder="{{ i18n "contact_website" | default "Website" }}">
+      </div>
+      <div class="mb-4">
+        <label class="sr-only" for="inputCountry">{{ i18n "contact_country" }}</label>
+        <input type="text" name="country" class="w-full p-2 border border-gray-300 rounded" id="inputCountry" placeholder="{{ i18n "contact_country" | default "Country" }}">
+      </div>
+      <div class="mb-4">
+        <label class="sr-only" for="inputCity">{{ i18n "contact_city" }}</label>
+        <input type="text" name="city" class="w-full p-2 border border-gray-300 rounded" id="inputCity" placeholder="{{ i18n "contact_city" | default "City" }}">
       </div>
       <div class="mb-4">
         <label class="sr-only" for="inputSubject">{{ i18n "contact_subject" }}</label>
@@ -28,12 +52,6 @@
         <label class="sr-only" for="inputMessage">{{ i18n "contact_message" }}</label>
         <textarea name="message" class="w-full p-2 border border-gray-300 rounded" id="inputMessage" rows="5" placeholder="{{ i18n "contact_message" | default "Message" }}" required></textarea>
       </div>
-      <!-- 
-      <div class="mb-4">
-        <label class="sr-only" for="fileUpload">{{ i18n "contact_attachment" }}</label>
-        <input type="file" name="file" class="w-full p-2 border border-gray-300 rounded" id="fileUpload" placeholder="{{ i18n "contact_attachment" | default "Attach file" }}">
-      </div>
-       -->
       <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
       <button type="submit" class="w-full py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">{{ i18n "contact_send" | default "Send" }}</button>
     </form>
@@ -140,18 +158,16 @@
         }
       })
       .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
+        if (response.ok) {
+          // Clear the form
+          form.reset();
+          // Disable all inputs
+          const inputs = form.querySelectorAll('input, textarea, button');
+          inputs.forEach(input => input.disabled = true);        
+          alert('Message sent successfully!');
+        } else {
+          alert('There was an error sending your message.');
         }
-        return response.json();
-      })
-      .then(data => {
-        // Clear the form
-        form.reset();
-        // Disable all inputs
-        const inputs = form.querySelectorAll('input, textarea, button');
-        inputs.forEach(input => input.disabled = true);        
-        alert('Message sent successfully!');
       })
       .catch(error => {
         alert('There was an error sending your message.');
@@ -159,3 +175,4 @@
     });
   });
 </script>
+
