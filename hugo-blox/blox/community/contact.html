@@ -130,7 +130,8 @@
     grecaptcha.execute('6LfvTB0qAAAAAJKb-ayOnYI_fpA9ukwWIiU1ZL5X', {action: 'submit'}).then(function(token) {
       document.getElementById('g-recaptcha-response').value = token;
 
-      const formData = new FormData(document.getElementById('contact-form'));
+      const form = document.getElementById('contact-form');
+      const formData = new FormData(form);
       fetch('https://email.raise.systems/sendemail', {
         method: 'POST',
         body: formData,
@@ -145,6 +146,11 @@
         return response.json();
       })
       .then(data => {
+        // Clear the form
+        form.reset();
+        // Disable all inputs
+        const inputs = form.querySelectorAll('input, textarea, button');
+        inputs.forEach(input => input.disabled = true);        
         alert('Message sent successfully!');
       })
       .catch(error => {
