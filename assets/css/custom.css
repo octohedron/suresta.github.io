@@ -1,0 +1,7 @@
+.img-light {
+  filter: invert(0) brightness(1);
+}
+
+.img-dark {
+  filter: invert(1) brightness(0.8) grayscale(100%);
+}

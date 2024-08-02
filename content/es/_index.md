@@ -1,6 +1,6 @@
 ---
 title: "Home"
-date: 2023-10-24
+date: 2024-08-01
 type: landing
 
 design:
@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: "Software Reliability, Integrity, and Assistance"
-      text: SIMPLE SUBSCRIPTION, CANCEL ANY TIME.
+      text: SIMPLE SUBSCRIPTION SERVICE, CANCEL ANY TIME.
       primary_action:
         text: Get Started
         url: /contact/

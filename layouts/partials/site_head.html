@@ -84,6 +84,8 @@
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
   {{ end }}
 
+  
+
   <script>
     /* Hugo Blox JS Global Init */
     window.hbb = {
@@ -130,6 +132,23 @@
           span.appendChild(textNodes[0]);
         }
       });
+
+      const themeToggle = document.getElementById('theme-toggle');
+      const logoImg = document.getElementById('logo-img');
+  
+      function applyLogoClass() {
+        const isDark = document.documentElement.classList.contains('dark');
+        if (logoImg) {
+          logoImg.classList.toggle('img-light', !isDark);
+          logoImg.classList.toggle('img-dark', isDark);
+        }
+      }
+  
+      themeToggle.addEventListener('click', function () {
+        setTimeout(applyLogoClass, 300);
+      });
+  
+      applyLogoClass();
     });
   </script>
 
