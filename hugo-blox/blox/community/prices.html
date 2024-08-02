@@ -1,0 +1,81 @@
+{{/* Hugo Blox: Prices */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $data := $block.content }}
+
+<section class="block-prices py-16 {{- with $data.background }} block-bg{{ end }}">
+  <div class="container mx-auto px-6 max-w-screen-lg">
+    
+    {{- with $data.heading.title }}
+      <h2 class="text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">{{ . }}</h2>
+    {{ end }}
+
+    {{- $column := 3 -}}
+    {{- with $data.column -}}
+      {{- $column = . -}}
+    {{- end -}}
+    {{- with $data.items }}
+    <div class="grid gap-8 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1">
+      {{ range $index, $item := . }}
+        <div class="relative w-full">
+          {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
+          <div class="bg-white dark:bg-gray-800 shadow-lg rounded-3xl overflow-hidden transform transition duration-300 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
+            
+            <div class="item {{- with $item.is_primary }} item-primary{{ end }} p-8">
+              
+              <header class="mb-6 text-center">
+                {{- with $item.badge }}
+                  <span class="bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md">{{ . }}</span>
+                {{ end -}}
+                {{- with $item.title }}
+                  {{- printf "<%s class='text-3xl font-bold mt-4 text-gray-900 dark:text-white'>" $tag | safeHTML -}}
+                    {{ . }}
+                  {{- printf "</%s>" $tag | safeHTML -}}
+                {{ end -}}
+                {{ with $item.text }}
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
+                {{ end }}
+                {{ with $item.offer }}
+                  <div class="price mt-6 mb-4">
+                    <span class="text-5xl font-extrabold text-gray-900 dark:text-white">{{ .price }}</span>
+                    {{- if .discount }}<span class="text-sm text-red-500 ml-2">{{ .discount }}</span>{{ end -}}
+                    {{- if .frequency }}<span class="text-sm text-gray-600 dark:text-gray-400 block">{{ .frequency }}</span>{{ end -}}
+                  </div>
+                  {{ with .text }}
+                    <p class="text-gray-500 dark:text-gray-400 mt-2">{{ . }}</p>
+                  {{ end }}
+                {{ end }}
+              </header>
+
+              {{- with $item.arguments }}
+              <div class="content mb-6">
+                <ul class="list-none space-y-4 text-gray-700 dark:text-gray-400">
+                {{- range . }}
+                  <li class="flex items-start">
+                    {{- with .icon -}}
+                      <i class="icon icon-{{ . }} text-blue-500 mr-3"></i>
+                    {{ end -}}
+                    <span>{{ .text }}</span>
+                  </li>
+                {{ end -}}
+                </ul>
+              </div>
+              {{ end -}}
+
+              {{- with $item.cta }}
+                <footer class="mt-6 text-center">
+                  <a href="{{ .url }}" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">{{ .text }}</a>
+                </footer>
+              {{ end -}}
+
+            </div>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+    {{ else }}
+      <p class="text-center text-gray-500 dark:text-gray-400">No items found</p>
+    {{ end -}}
+
+  </div>
+</section>

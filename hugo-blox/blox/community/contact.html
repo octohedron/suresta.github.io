@@ -7,50 +7,57 @@
 {{ $block := .wcBlock }}
 {{ $autolink := default true $block.content.autolink }}
 {{ $data := $block.content }}
+{{ $required_fields := $data.required_fields | default slice }}
+
 
 <section class="py-8 px-4 mx-auto max-w-screen-md sm:py-16 lg:px-6">
-  {{ with $block.content.text }}<p>{{ . | emojify | $page.RenderString }}</p>{{ end }}
+  {{ with $data.subtitle }}
+    <h3 class="text-2xl font-semibold text-center mb-4">{{ . }}</h3>
+  {{ end }}
+  {{ with $block.content.text }}
+    <p class="text-lg text-center mb-8">{{ . | emojify | $page.RenderString }}</p>
+  {{ end }}
   <div class="mb-6">
     <form id="contact-form">
       <div class="mb-4">
-        <label class="sr-only" for="inputCompanyName">{{ i18n "contact_company" }}</label>
-        <input type="text" name="company" class="w-full p-2 border border-gray-300 rounded" id="inputCompanyName" placeholder="{{ i18n "contact_company" | default "Company Name" }}" required>
+        <label class="block mb-2" for="inputCompanyName">{{ i18n "contact_company" }}{{ if in $required_fields "company" }}<span class="text-red-500">*</span>{{ end }}</label>
+        <input type="text" name="company" class="w-full p-2 border border-gray-300 rounded" id="inputCompanyName" placeholder="{{ i18n "contact_company" | default "Company Name" }}" {{ if in $required_fields "company" }}required{{ end }}>
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputFirstName">{{ i18n "contact_first_name" }}</label>
-        <input type="text" name="first_name" class="w-full p-2 border border-gray-300 rounded" id="inputFirstName" placeholder="{{ i18n "contact_first_name" | default "First Name" }}" required>
+        <label class="block mb-2" for="inputFirstName">{{ i18n "contact_first_name" }}{{ if in $required_fields "first_name" }}<span class="text-red-500">*</span>{{ end }}</label>
+        <input type="text" name="first_name" class="w-full p-2 border border-gray-300 rounded" id="inputFirstName" placeholder="{{ i18n "contact_first_name" | default "First Name" }}" {{ if in $required_fields "first_name" }}required{{ end }}>
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputLastName">{{ i18n "contact_last_name" }}</label>
-        <input type="text" name="last_name" class="w-full p-2 border border-gray-300 rounded" id="inputLastName" placeholder="{{ i18n "contact_last_name" | default "Last Name" }}" required>
+        <label class="block mb-2" for="inputLastName">{{ i18n "contact_last_name" }}{{ if in $required_fields "last_name" }}<span class="text-red-500">*</span>{{ end }}</label>
+        <input type="text" name="last_name" class="w-full p-2 border border-gray-300 rounded" id="inputLastName" placeholder="{{ i18n "contact_last_name" | default "Last Name" }}" {{ if in $required_fields "last_name" }}required{{ end }}>
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputEmail">{{ i18n "contact_email" }}</label>
-        <input type="email" name="email" class="w-full p-2 border border-gray-300 rounded" id="inputEmail" placeholder="{{ i18n "contact_email" | default "Email" }}" required>
+        <label class="block mb-2" for="inputEmail">{{ i18n "contact_email" }}{{ if in $required_fields "email" }}<span class="text-red-500">*</span>{{ end }}</label>
+        <input type="email" name="email" class="w-full p-2 border border-gray-300 rounded" id="inputEmail" placeholder="{{ i18n "contact_email" | default "Email" }}" {{ if in $required_fields "email" }}required{{ end }}>
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputPhoneNumber">{{ i18n "contact_phone" }}</label>
-        <input type="text" name="phone" class="w-full p-2 border border-gray-300 rounded" id="inputPhoneNumber" placeholder="{{ i18n "contact_phone" | default "Phone Number" }}" required>
+        <label class="block mb-2" for="inputPhoneNumber">{{ i18n "contact_phone" }}</label>
+        <input type="text" name="phone" class="w-full p-2 border border-gray-300 rounded" id="inputPhoneNumber" placeholder="{{ i18n "contact_phone" | default "Phone Number" }}">
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputWebsite">{{ i18n "contact_website" }}</label>
+        <label class="block mb-2" for="inputWebsite">{{ i18n "contact_website" }}</label>
         <input type="url" name="website" class="w-full p-2 border border-gray-300 rounded" id="inputWebsite" placeholder="{{ i18n "contact_website" | default "Website" }}">
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputCountry">{{ i18n "contact_country" }}</label>
+        <label class="block mb-2" for="inputCountry">{{ i18n "contact_country" }}</label>
         <input type="text" name="country" class="w-full p-2 border border-gray-300 rounded" id="inputCountry" placeholder="{{ i18n "contact_country" | default "Country" }}">
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputCity">{{ i18n "contact_city" }}</label>
+        <label class="block mb-2" for="inputCity">{{ i18n "contact_city" }}</label>
         <input type="text" name="city" class="w-full p-2 border border-gray-300 rounded" id="inputCity" placeholder="{{ i18n "contact_city" | default "City" }}">
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputSubject">{{ i18n "contact_subject" }}</label>
-        <input type="text" name="subject" class="w-full p-2 border border-gray-300 rounded" id="inputSubject" placeholder="{{ i18n "contact_subject" | default "Subject" }}" required>
+        <label class="block mb-2" for="inputSubject">{{ i18n "contact_subject" }}{{ if in $required_fields "subject" }}<span class="text-red-500">*</span>{{ end }}</label>
+        <input type="text" name="subject" class="w-full p-2 border border-gray-300 rounded" id="inputSubject" placeholder="{{ i18n "contact_subject" | default "Subject" }}" {{ if in $required_fields "subject" }}required{{ end }}>
       </div>
       <div class="mb-4">
-        <label class="sr-only" for="inputMessage">{{ i18n "contact_message" }}</label>
-        <textarea name="message" class="w-full p-2 border border-gray-300 rounded" id="inputMessage" rows="5" placeholder="{{ i18n "contact_message" | default "Message" }}" required></textarea>
+        <label class="block mb-2" for="inputMessage">{{ i18n "contact_message" }}{{ if in $required_fields "message" }}<span class="text-red-500">*</span>{{ end }}</label>
+        <textarea name="message" class="w-full p-2 border border-gray-300 rounded" id="inputMessage" rows="5" placeholder="{{ i18n "contact_message" | default "Message" }}" {{ if in $required_fields "message" }}required{{ end }}></textarea>
       </div>
       <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
       <button type="submit" class="w-full py-2 px-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-75">{{ i18n "contact_send" | default "Send" }}</button>
@@ -122,6 +129,12 @@
   </ul>
 
   <div id="map" class="w-full h-64 mt-4"></div>
+  <div id="popup" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
+    <div id="popupContent" class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+      <p id="popupMessage" class="text-gray-700 dark:text-gray-200"></p>
+    </div>
+  </div>
+  
 </section>
 
 <script>
@@ -143,36 +156,76 @@
     });
   });
 
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    grecaptcha.execute('6LfvTB0qAAAAAJKb-ayOnYI_fpA9ukwWIiU1ZL5X', {action: 'submit'}).then(function(token) {
-      document.getElementById('g-recaptcha-response').value = token;
+  function showPopup(message, isSuccess = true) {
+  const popup = document.getElementById('popup');
+  const popupMessage = document.getElementById('popupMessage');
+  popupMessage.textContent = message;
+  popupMessage.classList.remove('text-red-500', 'text-green-500');
+  popupMessage.classList.add(isSuccess ? 'text-green-500' : 'text-red-500');
+  popup.classList.remove('hidden');
+  setTimeout(() => {
+    popup.classList.add('hidden');
+  }, 3000);
+}
 
-      const form = document.getElementById('contact-form');
-      const formData = new FormData(form);
-      fetch('https://email.raise.systems/sendemail', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        if (response.ok) {
-          // Clear the form
-          form.reset();
-          // Disable all inputs
-          const inputs = form.querySelectorAll('input, textarea, button');
-          inputs.forEach(input => input.disabled = true);        
-          alert('Message sent successfully!');
-        } else {
-          alert('There was an error sending your message.');
-        }
-      })
-      .catch(error => {
-        alert('There was an error sending your message.');
-      });
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Validate required fields
+  const requiredFields = JSON.parse('{{ $required_fields | jsonify }}');
+  let isValid = true;
+  requiredFields.forEach(function(field) {
+    const input = document.getElementsByName(field)[0];
+    if (!input.value) {
+      isValid = false;
+      input.classList.add('border-red-500');
+      const errorText = document.createElement('span');
+      errorText.classList.add('text-red-500', 'text-sm');
+      errorText.textContent = 'This field is required';
+      if (!input.nextElementSibling) {
+        input.parentNode.appendChild(errorText);
+      }
+    } else {
+      input.classList.remove('border-red-500');
+      if (input.nextElementSibling) {
+        input.parentNode.removeChild(input.nextElementSibling);
+      }
+    }
+  });
+
+  if (!isValid) {
+    showPopup('Please fill out all required fields.', false);
+    return;
+  }
+
+  showPopup('Sending...', true);
+
+  grecaptcha.execute('6LfvTB0qAAAAAJKb-ayOnYI_fpA9ukwWIiU1ZL5X', {action: 'submit'}).then(function(token) {
+    document.getElementById('g-recaptcha-response').value = token;
+
+    const form = document.getElementById('contact-form');
+    const formData = new FormData(form);
+    fetch('https://email.raise.systems/sendemail', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        const inputs = form.querySelectorAll('input, textarea, button');
+        inputs.forEach(input => input.disabled = true);        
+        showPopup('Message sent successfully!', true);
+      } else {
+        showPopup('There was an error sending your message.', false);
+      }
+    })
+    .catch(error => {
+      showPopup('There was an error sending your message.', false);
     });
   });
+});
 </script>
 

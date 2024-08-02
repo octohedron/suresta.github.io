@@ -2,13 +2,17 @@
 title: Contact
 type: landing
 
+design:
+  # Default section spacing
+  spacing: "1rem"
+
 sections:
   - block: contact
     id: contact
     content:
       title: Contact
-      subtitle: ''
-      text: ''
+      subtitle: 'Contact us'
+      text: "Fill out the form below, and we'll contact you shortly"
       email: operations@suresta.com
       phone: +34 641 49 41 53
       appointment_url: 'https://calendly.com'
@@ -37,6 +41,7 @@ sections:
       coordinates:
         latitude: '37.4275'
         longitude: '-122.1697'
+      required_fields: ['first_name', 'last_name', 'email', 'subject', 'message', 'company']
     design:
       columns: '1'
 ---

@@ -4,3 +4,11 @@ github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33/go.mod h1:+qBbqXbKT7M2nOeHQa5OrRXwQKpEx1RXpMGirHbT7HU=
 github.com/bep/hugo-starter-tailwind-basic/v3 v3.0.2 h1:Cn8oFqVnnVaNykhiv7IyxadojRPZHVLbIMW8n4shxUs=
 github.com/bep/hugo-starter-tailwind-basic/v3 v3.0.2/go.mod h1:Ee2SCBmWoyYT6nGF2JEyrTP8vmctb/cGKyduFeLgTW8=
+github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+yb0/t3/rau1j8XlAxLE4CyXns2fqQbyqWfs=
+github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
+github.com/hugolify/hugolify-netlify-cms v1.8.3 h1:Y8PZ/exxZxEaKcmFJyi42culpJeWegWtbgVzKnVkAQU=
+github.com/hugolify/hugolify-netlify-cms v1.8.3/go.mod h1:Q7HNXBxIatKmA+mlG+3HbWUYApZnftOwFz6kevyg/HU=
+github.com/hugolify/hugolify-theme v1.15.4 h1:3h17pQHXiMuoW3VPTSPZTB2rYRfHfMO65/x7UN8g1SY=
+github.com/hugolify/hugolify-theme v1.15.4/go.mod h1:yDbH6g0BJAqjueFrZ13u2lC9gWsYuKDFjQirn805zvo=
+github.com/twbs/bootstrap v5.3.3+incompatible h1:goFoqinzdHfkeegpFP7pvhbd0g+A3O2hbU3XCjuNrEQ=
+github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=

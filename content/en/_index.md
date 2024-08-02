@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: "Software Reliability, Integrity, and Assistance"
-      text: SIMPLE SUBSCRIPTION, CANCEL ANY TIME.
+      text: SIMPLE SUBSCRIPTION SERVICE, CANCEL ANY TIME.
       primary_action:
         text: Get Started
         url: /contact/
@@ -37,6 +37,61 @@ sections:
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
+  - block: prices
+    content:
+      heading:
+        title: "Flexible pricing options"
+      column: 3
+      items:
+        - title: "Business"
+          text: "Suitable for individuals"
+          badge: "Best Value"
+          offer:
+            price: 0.12
+            discount: "20% off"
+            frequency: "per month"
+            text: "Billed annually"
+          arguments:
+            - icon: "check"
+              text: "Access to all features"
+            - icon: "check"
+              text: "Email support"
+          cta:
+            text: "Sign Up"
+            url: "/signup"
+        - title: "Enterprise"
+          text: "Suitable for individuals"
+          badge: "Best Value"
+          offer:
+            price: 0.12
+            discount: "20% off"
+            frequency: "per month"
+            text: "Billed annually"
+          arguments:
+            - icon: "check"
+              text: "Access to all features"
+            - icon: "check"
+              text: "Email support"
+          cta:
+            text: "Sign Up"
+            url: "/signup"
+        - title: "Full-service"
+          text: "Ideal for businesses"
+          offer:
+            price: 0.24
+            discount: "15% off"
+            frequency: "per month"
+            text: "Billed annually"
+          arguments:
+            - icon: "check"
+              text: "All features in Basic"
+            - icon: "check"
+              text: "Priority support"
+          cta:
+            text: "Get Started"
+            url: "/get-started"
+      background: false
+
   - block: stats
     content:
       items:
@@ -62,7 +117,7 @@ sections:
     id: features
     content:
       title: Features
-      text: Our team offers dozens of technical and business services to suit your needs 
+      text: Our team offers dozens of technical and business services to suit your needs
       items:
         - name: Optimize Security
           icon: magnifying-glass
@@ -94,11 +149,11 @@ sections:
             - "Avoid outages"
             - "Provide peace of mind on the integrity and realiability of your projects"
             - "Balance reliability and progress"
-            
+
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
-            text:  Read More about SRE
+            text: Read More about SRE
             url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
         - title: Why a subscription?
           text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexibility without sacrificing value
@@ -118,7 +173,7 @@ sections:
   - block: testimonials
     content:
       title: "Our Team Members' Clients"
-      text: "" 
+      text: ""
       items:
         - name: "Richard Jefferson"
           role: "Team Lead"
