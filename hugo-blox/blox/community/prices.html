@@ -10,72 +10,130 @@
       <h2 class="text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">{{ . }}</h2>
     {{ end }}
 
-    {{- $column := 3 -}}
-    {{- with $data.column -}}
-      {{- $column = . -}}
-    {{- end -}}
-    {{- with $data.items }}
-    <div class="grid gap-8 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1">
-      {{ range $index, $item := . }}
-        <div class="relative w-full">
-          {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
-          <div class="bg-white dark:bg-gray-800 shadow-lg rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
-            
-            <div class="item {{- with $item.is_primary }} item-primary{{ end }} p-8">
+    <div class="box bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8">
+      <div class="flex items-center justify-between mb-6">
+        <div>
+          <label for="increase-price" class="mr-2">Increase all prices by 50%:</label>
+          <input type="checkbox" id="increase-price" class="price-modifier">
+        </div>
+        <div>
+          <label for="add-base-price" class="mr-2">Add $100 to first and second tiers:</label>
+          <input type="checkbox" id="add-base-price" class="price-modifier">
+        </div>
+        <div>
+          <label for="extra-cost" class="mr-2">Add $250 per unit:</label>
+          <input type="number" id="extra-cost" class="price-modifier" min="0" value="0">
+        </div>
+      </div>
+
+      {{- $column := 3 -}}
+      {{- with $data.column -}}
+        {{- $column = . -}}
+      {{- end -}}
+      {{- with $data.items }}
+      <div class="grid gap-8 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1">
+        {{ range $index, $item := . }}
+          <div class="relative w-full">
+            {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
+            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
               
-              <header class="mb-6 text-center">
-                {{- with $item.badge }}
-                  <span class="bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md">{{ . }}</span>
-                {{ end -}}
-                {{- with $item.title }}
-                  {{- printf "<%s class='text-3xl font-bold mt-4 text-gray-900 dark:text-white'>" $tag | safeHTML -}}
-                    {{ . }}
-                  {{- printf "</%s>" $tag | safeHTML -}}
-                {{ end -}}
-                {{ with $item.text }}
-                  <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
-                {{ end }}
-                {{ with $item.offer }}
-                  <div class="price mt-6 mb-4">
-                    <span class="text-5xl font-extrabold text-gray-900 dark:text-white">{{ .price }}</span>
-                    {{- if .discount }}<span class="text-sm text-red-500 ml-2">{{ .discount }}</span>{{ end -}}
-                    {{- if .frequency }}<span class="text-sm text-gray-600 dark:text-gray-400 block">{{ .frequency }}</span>{{ end -}}
-                  </div>
-                  {{ with .text }}
-                    <p class="text-gray-500 dark:text-gray-400 mt-2">{{ . }}</p>
+              <div class="item {{- with $item.is_primary }} item-primary{{ end }} p-8">
+                
+                <header class="mb-6 text-center">
+                  {{- with $item.badge }}
+                    <span class="bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md">{{ . }}</span>
+                  {{ end -}}
+                  {{- with $item.title }}
+                    {{- printf "<%s class='text-3xl font-bold mt-4 text-gray-900 dark:text-white'>" $tag | safeHTML -}}
+                      {{ . }}
+                    {{- printf "</%s>" $tag | safeHTML -}}
+                  {{ end -}}
+                  {{ with $item.text }}
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
                   {{ end }}
-                {{ end }}
-              </header>
+                  {{ with $item.offer }}
+                    <div class="price mt-6 mb-4">
+                      <span class="price-value text-5xl font-extrabold text-gray-900 dark:text-white" data-original-price="{{ .price }}">{{ .price }}</span>
+                      {{- if .discount }}<span class="text-sm text-red-500 ml-2">{{ .discount }}</span>{{ end -}}
+                      {{- if .frequency }}<span class="text-sm text-gray-600 dark:text-gray-400 block">{{ .frequency }}</span>{{ end -}}
+                    </div>
+                    {{ with .text }}
+                      <p class="text-gray-500 dark:text-gray-400 mt-2">{{ . }}</p>
+                    {{ end }}
+                  {{ end }}
+                </header>
 
-              {{- with $item.arguments }}
-              <div class="content mb-6">
-                <ul class="list-none space-y-4 text-gray-700 dark:text-gray-400">
-                {{- range . }}
-                  <li class="flex items-start">
-                    {{- with .icon -}}
-                      <i class="icon icon-{{ . }} text-blue-500 mr-3"></i>
-                    {{ end -}}
-                    <span>{{ .text }}</span>
-                  </li>
+                {{- with $item.arguments }}
+                <div class="content mb-6">
+                  <ul class="list-none space-y-4 text-gray-700 dark:text-gray-400">
+                  {{- range . }}
+                    <li class="flex items-start">
+                      {{- with .icon -}}
+                        <i class="icon icon-{{ . }} text-blue-500 mr-3"></i>
+                      {{ end -}}
+                      <span>{{ .text }}</span>
+                    </li>
+                  {{ end -}}
+                  </ul>
+                </div>
                 {{ end -}}
-                </ul>
+
+                {{- with $item.cta }}
+                  <footer class="mt-6 text-center">
+                    <a href="{{ .url }}" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">{{ .text }}</a>
+                  </footer>
+                {{ end -}}
+
               </div>
-              {{ end -}}
-
-              {{- with $item.cta }}
-                <footer class="mt-6 text-center">
-                  <a href="{{ .url }}" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">{{ .text }}</a>
-                </footer>
-              {{ end -}}
-
             </div>
           </div>
-        </div>
-      {{ end }}
-    </div>
-    {{ else }}
-      <p class="text-center text-gray-500 dark:text-gray-400">No items found</p>
-    {{ end -}}
+        {{ end }}
+      </div>
+      {{ else }}
+        <p class="text-center text-gray-500 dark:text-gray-400">No items found</p>
+      {{ end -}}
 
+    </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const priceModifiers = document.querySelectorAll('.price-modifier');
+    const priceElements = document.querySelectorAll('.price-value');
+
+    function updatePrices() {
+      const increasePrice = document.getElementById('increase-price').checked;
+      const addBasePrice = document.getElementById('add-base-price').checked;
+      const extraCost = parseInt(document.getElementById('extra-cost').value, 10) || 0;
+
+      priceElements.forEach(function (priceElement, index) {
+        const originalPrice = parseFloat(priceElement.dataset.originalPrice);
+        let newPrice = originalPrice;
+
+        if (increasePrice) {
+          newPrice *= 1.5;
+        }
+
+        if (addBasePrice && index < 2) {
+          newPrice += 100;
+        }
+
+        newPrice += extraCost * 250;
+
+        if (increasePrice) {
+          newPrice *= 1.5;
+        }
+
+        priceElement.textContent = newPrice.toFixed(2);
+      });
+    }
+
+    priceModifiers.forEach(function (modifier) {
+      modifier.addEventListener('input', updatePrices);
+    });
+
+    updatePrices();
+  });
+
+</script>
