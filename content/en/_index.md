@@ -41,8 +41,24 @@ sections:
     content:
       heading:
         title: "Flexible pricing options"
-      column: 3
+      column: 4
       items:
+        - title: "Free"
+          text: "Ideal for testing and small projects"
+          badge: "Free"
+          offer:
+            price: 0.00
+            discount: ""
+            frequency: "forever"
+            text: ""
+          arguments:
+            - icon: "check"
+              text: "Basic access"
+            - icon: "check"
+              text: "Community support"
+          cta:
+            text: "Get Started"
+            url: "/get-started-free"
         - title: "Business"
           text: "Suitable for individuals"
           badge: "Best Value"

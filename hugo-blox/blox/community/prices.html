@@ -4,13 +4,13 @@
 {{ $data := $block.content }}
 
 <section class="block-prices py-16 {{- with $data.background }} block-bg{{ end }}">
-  <div class="container mx-auto px-6 max-w-screen-lg">
+  <div class="container mx-auto px-6 max-w-screen-xl">
     
     {{- with $data.heading.title }}
       <h2 class="text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">{{ . }}</h2>
     {{ end }}
 
-    <div class="box bg-white dark:bg-gray-800 shadow-lg rounded-lg p-8">
+    <div class="box bg-blue-50 dark:bg-gray-800 shadow-lg rounded-3xl p-8">
       <div class="flex items-center justify-between mb-6">
         <div>
           <label for="increase-price" class="mr-2">Increase all prices by 50%:</label>
@@ -33,27 +33,32 @@
       {{- with $data.items }}
       <div class="grid gap-8 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1">
         {{ range $index, $item := . }}
-          <div class="relative w-full">
-            {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
-            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
+          {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
+          <div class="relative w-full {{ if eq $index 0 }}bg-green-100 border-green-500{{ else }}bg-white dark:bg-gray-800{{ end }} shadow-lg rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 1 }}border-4 border-yellow-500 z-10{{ end }}">
+            
+            <div class="item {{- with $item.is_primary }} item-primary{{ end }} p-8">
               
-              <div class="item {{- with $item.is_primary }} item-primary{{ end }} p-8">
-                
-                <header class="mb-6 text-center">
-                  {{- with $item.badge }}
-                    <span class="bg-yellow-500 text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md">{{ . }}</span>
-                  {{ end -}}
-                  {{- with $item.title }}
-                    {{- printf "<%s class='text-3xl font-bold mt-4 text-gray-900 dark:text-white'>" $tag | safeHTML -}}
-                      {{ . }}
-                    {{- printf "</%s>" $tag | safeHTML -}}
-                  {{ end -}}
-                  {{ with $item.text }}
-                    <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
-                  {{ end }}
+              <header class="mb-6 text-center">
+                {{- with $item.badge }}
+                  <span class="bg-{{ if eq $index 0 }}green-500{{ else }}yellow-500{{ end }} text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md">{{ . }}</span>
+                {{ end -}}
+                {{- with $item.title }}
+                  {{- printf "<%s class='text-3xl font-bold mt-4 text-{{ if eq $index 0 }}green-700{{ else }}gray-900 dark:text-white{{ end }}'>" $tag | safeHTML -}}
+                    {{ . }}
+                  {{- printf "</%s>" $tag | safeHTML -}}
+                {{ end -}}
+                {{ with $item.text }}
+                  <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
+                {{ end }}
+                {{ if eq $index 0 }}
+                  <div class="price mt-6 mb-4">
+                    <span class="text-3xl font-extrabold text-gray-900 dark:text-white">{{ $item.offer.price }} €</span>
+                    <span class="text-sm text-gray-600 dark:text-gray-400 block">{{ $item.offer.frequency }}</span>
+                  </div>
+                {{ else }}
                   {{ with $item.offer }}
                     <div class="price mt-6 mb-4">
-                      <span class="price-value text-5xl font-extrabold text-gray-900 dark:text-white" data-original-price="{{ .price }}">{{ .price }}</span>
+                      <span class="price-value text-3xl font-extrabold text-gray-900 dark:text-white" data-original-price="{{ .price }}">{{ .price }}  €</span>
                       {{- if .discount }}<span class="text-sm text-red-500 ml-2">{{ .discount }}</span>{{ end -}}
                       {{- if .frequency }}<span class="text-sm text-gray-600 dark:text-gray-400 block">{{ .frequency }}</span>{{ end -}}
                     </div>
@@ -61,30 +66,30 @@
                       <p class="text-gray-500 dark:text-gray-400 mt-2">{{ . }}</p>
                     {{ end }}
                   {{ end }}
-                </header>
-
-                {{- with $item.arguments }}
-                <div class="content mb-6">
-                  <ul class="list-none space-y-4 text-gray-700 dark:text-gray-400">
-                  {{- range . }}
-                    <li class="flex items-start">
-                      {{- with .icon -}}
-                        <i class="icon icon-{{ . }} text-blue-500 mr-3"></i>
-                      {{ end -}}
-                      <span>{{ .text }}</span>
-                    </li>
-                  {{ end -}}
-                  </ul>
-                </div>
+                {{ end }}
+              </header>
+      
+              {{- with $item.arguments }}
+              <div class="content mb-6">
+                <ul class="list-none space-y-4 text-gray-700 dark:text-gray-400">
+                {{- range . }}
+                  <li class="flex items-start">
+                    {{- with .icon -}}
+                      <i class="icon icon-{{ . }} text-blue-500 mr-3"></i>
+                    {{ end -}}
+                    <span>{{ .text }}</span>
+                  </li>
                 {{ end -}}
-
-                {{- with $item.cta }}
-                  <footer class="mt-6 text-center">
-                    <a href="{{ .url }}" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">{{ .text }}</a>
-                  </footer>
-                {{ end -}}
-
+                </ul>
               </div>
+              {{ end -}}
+      
+              {{- with $item.cta }}
+                <footer class="mt-6 text-center">
+                  <a href="{{ .url }}" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">{{ .text }}</a>
+                </footer>
+              {{ end -}}
+      
             </div>
           </div>
         {{ end }}
@@ -92,8 +97,7 @@
       {{ else }}
         <p class="text-center text-gray-500 dark:text-gray-400">No items found</p>
       {{ end -}}
-
-    </div>
+</div>
   </div>
 </section>
 
@@ -125,7 +129,7 @@
           newPrice *= 1.5;
         }
 
-        priceElement.textContent = newPrice.toFixed(2);
+        priceElement.textContent = newPrice.toFixed(2) + "  €";
       });
     }
 
