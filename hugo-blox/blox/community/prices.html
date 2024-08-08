@@ -42,8 +42,12 @@
                 {{- with $item.badge }}
                   <span class="bg-{{ if eq $index 0 }}green-500{{ else }}yellow-500{{ end }} text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md">{{ . }}</span>
                 {{ end -}}
-                {{- with $item.title }}
-                  {{- printf "<%s class='text-3xl font-bold mt-4 text-{{ if eq $index 0 }}green-700{{ else }}gray-900 dark:text-white{{ end }}'>" $tag | safeHTML -}}
+                  {{- with $item.title }}
+                    {{- $titleColor := "gray-900 dark:text-white" -}}
+                    {{- if eq $index 0 -}}
+                      {{- $titleColor = "green-700" -}}
+                    {{- end -}}
+                  {{- printf "<%s class='text-3xl font-bold mt-4 text-%s'>" $tag $titleColor | safeHTML -}}
                     {{ . }}
                   {{- printf "</%s>" $tag | safeHTML -}}
                 {{ end -}}
@@ -52,7 +56,7 @@
                 {{ end }}
                 {{ if eq $index 0 }}
                   <div class="price mt-6 mb-4">
-                    <span class="text-3xl font-extrabold text-gray-900 dark:text-white">{{ $item.offer.price }} €</span>
+                    <span class="text-3xl font-extrabold text-gray-900 dark:text-black">{{ $item.offer.price }} €</span>
                     <span class="text-sm text-gray-600 dark:text-gray-400 block">{{ $item.offer.frequency }}</span>
                   </div>
                 {{ else }}
