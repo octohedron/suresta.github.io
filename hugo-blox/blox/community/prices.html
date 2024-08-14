@@ -10,33 +10,43 @@
       <h2 class="text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white">{{ . }}</h2>
     {{ end }}
 
-    <div class="box bg-purple-900 dark:bg-gray-800 shadow-lg rounded-3xl p-8">
-      <div class="bg-blue-200 dark:bg-blue-800 p-6 rounded-lg shadow-lg mb-8">
+    <div class="box bg-white sm:bg-purple-900 dark:bg-gray-800 sm:shadow-lg rounded-3xl p-0 sm:p-4">
+      <div class="bg-white sm:bg-blue-200 dark:bg-blue-800 p-0 sm:p-3 rounded-lg sm:shadow-lg mb-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
+        
           <div class="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg shadow-md flex items-center justify-center">
             <div class="flex justify-between items-center w-full">
-              <label for="increase-price" class="text-lg font-medium text-gray-900 dark:text-gray-100">Incident Commander</label>
+              <label for="increase-price" class="text-lg font-medium text-gray-900 dark:text-gray-100">
+                <span class="block lg:hidden">Commander</span>
+                <span class="hidden lg:block">Incident Commander</span>
+              </label>
               <input type="checkbox" id="increase-price" class="price-modifier h-8 w-8 text-blue-600 focus:ring-blue-500 border-gray-300 rounded-lg shadow-md">
             </div>
           </div>
-      
+        
           <div class="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-md flex items-center justify-center">
             <div class="flex justify-between items-center w-full">
-              <label for="add-base-price" class="text-lg font-medium text-gray-900 dark:text-gray-100">Alerting Systems</label>
+              <label for="add-base-price" class="text-lg font-medium text-gray-900 dark:text-gray-100">
+                <span class="block lg:hidden">Alerting</span>
+                <span class="hidden lg:block">Alerting Systems</span>
+              </label>
               <input type="checkbox" id="add-base-price" class="price-modifier h-8 w-8 text-gray-600 focus:ring-gray-500 border-gray-300 rounded-lg shadow-md">
             </div>
           </div>
-      
+        
           <div class="bg-gray-200 dark:bg-gray-900 p-4 rounded-lg shadow-md flex items-center justify-center">
             <div class="flex justify-between items-center w-full">
-              <label for="extra-cost" class="text-lg font-medium text-gray-900 dark:text-gray-100">Dedicated SREs</label>
+              <label for="extra-cost" class="text-lg font-medium text-gray-900 dark:text-gray-100">
+                <span class="block lg:hidden">SREs</span>
+                <span class="hidden lg:block">Dedicated SREs</span>
+              </label>
               <input type="number" id="extra-cost" class="price-modifier h-12 w-24 text-xl text-center text-gray-900 dark:text-black bg-gray-300 border border-gray-900 dark:border-gray-500 rounded-lg focus:ring-yellow-500 focus:border-yellow-500" min="0" step="1">
             </div>
           </div>
       
         </div>
       </div>
+      
       
 
       {{- $column := 3 -}}
