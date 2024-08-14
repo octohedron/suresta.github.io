@@ -44,68 +44,67 @@ sections:
       column: 4
       items:
         - title: "Free"
-          text: "Ideal for testing and small projects"
-          badge: "Free"
+          text: "Free alerting system for startups and small companies"
           offer:
             price: 0.00
             discount: ""
-            frequency: "forever"
+            frequency: ""
             text: ""
           arguments:
-            - icon: "check"
-              text: "Basic access"
-            - icon: "check"
-              text: "Community support"
+            - icon: "eye"
+              text: "Observability"
+            - icon: "bell-alert"
+              text: "Alerts"
+            - icon: "document-text"
+              text: "Documentation"
           cta:
             text: "Get Started"
-            url: "/get-started-free"
+            url: "/contact"
         - title: "Business"
-          text: "Suitable for individuals"
-          badge: "Best Value"
+          text: "Suitable for small companies"
           offer:
-            price: 0.12
-            discount: "20% off"
+            price: 349.49
+            discount: "10% off"
             frequency: "per month"
-            text: "Billed annually"
+            text: "Billed monthly"
           arguments:
-            - icon: "check"
-              text: "Access to all features"
-            - icon: "check"
-              text: "Email support"
-          cta:
-            text: "Sign Up"
-            url: "/signup"
-        - title: "Enterprise"
-          text: "Suitable for individuals"
-          badge: "Best Value"
-          offer:
-            price: 0.12
-            discount: "20% off"
-            frequency: "per month"
-            text: "Billed annually"
-          arguments:
-            - icon: "check"
-              text: "Access to all features"
-            - icon: "check"
-              text: "Email support"
-          cta:
-            text: "Sign Up"
-            url: "/signup"
-        - title: "Full-service"
-          text: "Ideal for businesses"
-          offer:
-            price: 0.24
-            discount: "15% off"
-            frequency: "per month"
-            text: "Billed annually"
-          arguments:
-            - icon: "check"
-              text: "All features in Basic"
-            - icon: "check"
-              text: "Priority support"
+            - icon: "academic-cap"
+              text: "Technical leadership"
+            - icon: "puzzle-piece"
+              text: "Custom integrations"
           cta:
             text: "Get Started"
-            url: "/get-started"
+            url: "/contact"
+        - title: "Enterprise"
+          text: "Suitable for small to medium companies"
+          badge: "Best Value"
+          offer:
+            price: 899.99
+            discount: "30% off"
+            frequency: "per month"
+            text: "Multiple"
+          arguments:
+            - icon: "link"
+              text: "Unlimited integrations"
+            - icon: "envelope"
+              text: "Email support"
+          cta:
+            text: "Get Started"
+            url: "/contact"
+        - title: "Full-service"
+          text: "Ideal for medium to large companies"
+          offer:
+            price: 3499.00
+            frequency: "per month"
+            text: "Billed monthly"
+          arguments:
+            - icon: "clock"
+              text: "24/7 support"
+            - icon: "arrow-path"
+              text: "Unlimited hours"
+          cta:
+            text: "Get Started"
+            url: "/contact"
       background: false
 
   - block: stats
