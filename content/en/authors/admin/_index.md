@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Gustavo Rodríguez
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Gustavo Rodríguez
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Gustavo
+last_name: Rodríguez
 
 # Status emoji
 status:
@@ -17,15 +17,20 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Software Architect, Technical Leader
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Suresta
+    url: https://suresta.com/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: |
+  Dedicated B2B Senior Software Engineer and DevOps Consultant with a 15-year track record of success in the development and implementation of cutting-edge software solutions and technical leadership. Currently seeking remote opportunities exclusively as a contractor or B2B partner.
+
+  Adept at working on web, desktop, and mobile applications, distributed systems, back-end, and IoT software, I have collaborated with top European researchers from organizations such as TNO and Salzburg Research. Skilled in a wide array of technologies, my expertise lies in managing and processing massive volumes of data, building data pipelines, and implementing automation strategies.
+
+  As a seasoned remote professional, I am highly adaptable and equipped to seamlessly integrate into your team, providing exceptional value to your projects as a freelance/contractor or B2B collaborator. Let's connect and explore how I can contribute to your organization's success.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -54,6 +59,6 @@ highlight_name: true
 website: ""
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include
+Gustavo Rodríguez is a Software Architect, Technical Leader at the Stanford AI Lab. Her research interests include
 distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops
 self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
