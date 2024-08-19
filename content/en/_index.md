@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Our services
-        url: https://suresta.com/
+        url: /
       announcement:
         text: "Announcing the release of version 2."
         link:
@@ -181,25 +181,24 @@ sections:
           image: coffee.jpg
           button:
             text: Get Started
-            url: https://suresta.com/templates/
+            url: /contact/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
   - block: testimonials
     content:
-      title: "Our Team Members' Clients"
-      text: ""
+      title: "Our Clients"
+      text: "What our clients are saying about our services"
       items:
-        - name: "Richard Jefferson"
-          role: "Team Lead"
-          # Upload image to `assets/media/` and reference the filename here
+        - name: "Satisfied Customer"
+          role: "Manager at GS"
+          image: "testimonial-2.jpg"
+          text: "Our Cloud Enablement team brought in Suresta to manage a complex identity and access management application. Their technical expertise, covering SAML, OIDC, OAuth, Go, React, AWS serverless, and Azure AD, was exactly what we needed. Thanks to their contributions, we saw significant improvements in application stability, test coverage, and logging clarity. The team communicates effectively and is a pleasure to work with. In addition to their technical prowess, they are genuinely nice people that I highly recommend."
+        - name: "Satisfied Customer"
+          role: "Manager at the EPO"
           image: ""
-          text: ""
-        - name: "Richard Smith"
-          role: "Marketing Executive at X"
-          # Upload image to `assets/media/` and reference the filename here
-          image: "testimonial-1.jpg"
-          text: ""
+          text: "Suresta has proven to be an exceptional partner, providing developers with all the skills one would want in top-notch software professionals. Their mastery of front-end programming languages has been invaluable to both our company and our clients. The team consistently delivers on time, helping nurture long-term client relationships. Their work is always top-tier, and they are open to feedback and committed to continuous improvement. Self-motivated and eager to solve problems, Suresta has been a great asset to our projects."
+
     design:
       spacing:
         # Reduce bottom spacing so the testimonial appears vertically centered between sections
@@ -210,7 +209,7 @@ sections:
       text: Contact us below
       button:
         text: Get Started
-        url: https://suresta.com/templates/
+        url: /contact/
     design:
       card:
         # Card background color (CSS class)
