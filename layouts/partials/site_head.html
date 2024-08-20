@@ -175,7 +175,47 @@
       });
 
       applyLogoClass();
+      // END hugo CSS fixes
+
+      // Cookies
+      const cookieBanner = document.getElementById('cookie-banner');
+      const cookieAcceptBtn = document.getElementById('cookie-accept');
+      const cookieName = 'cookieConsent';
+
+      // Function to get the value of a cookie by name
+      function getCookie(name) {
+          const value = `; ${document.cookie}`;
+          const parts = value.split(`; ${name}=`);
+          if (parts.length === 2) return parts.pop().split(';').shift();
+          return null;
+      }
+
+      // Function to set a cookie
+      function setCookie(name, value, days) {
+          const d = new Date();
+          d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+          const expires = "expires=" + d.toUTCString();
+          document.cookie = `${name}=${value}; ${expires}; path=/`;
+      }
+
+      // Show banner if the cookie is not set
+      if (!getCookie(cookieName)) {
+          cookieBanner.classList.remove('translate-y-full');
+          cookieBanner.classList.add('translate-y-0');
+      }
+
+      // Handle cookie acceptance
+      cookieAcceptBtn.addEventListener('click', function() {
+          setCookie(cookieName, 'accepted', 365);
+          cookieBanner.classList.add('translate-y-full');
+          cookieBanner.classList.remove('translate-y-0');
+      });
+      
+      // END Cookies
     });
+  </script>
+
+
   </script>
 
   {{/* Analytics & Verification */}}

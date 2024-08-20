@@ -20,10 +20,10 @@ sections:
         text: Our services
         url: https://suresta.com/
       announcement:
-        text: "Announcing the release of version 2."
+        text: "Announcing the world's first Site Reliability and Assurance Service Provider."
         link:
           text: "Read more"
-          url: "/blog/"
+          url: "/blog/launching-suresta/"
     design:
       spacing:
         padding: [0, 0, 0, 0]
