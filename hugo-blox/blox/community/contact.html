@@ -338,6 +338,49 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     const form = document.getElementById('contact-form');
     const formData = new FormData(form);
+    var success = true;
+
+    // Prepare data for Chatwoot API
+    const data = {
+      email: formData.get('email'),
+      name: formData.get('first_name') + ' ' + formData.get('last_name'),
+      phone_number: formData.get('phone'),
+      avatar_url: '',  // Add avatar URL if needed
+      custom_attributes: {
+        company: formData.get('company'),
+        website: formData.get('website'),
+        country: formData.get('country'),
+        city: formData.get('city'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+      }
+    };
+
+    fetch('https://crm.suresta.com/public/api/v1/inboxes/wkkLU1Y1yG3NaRdnDj8ASb41/contacts', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        const inputs = form.querySelectorAll('input, textarea, button');
+        inputs.forEach(input => input.disabled = true);
+      } else {
+        response.json().then(data => {
+          showPopup(`Error: ${data.error || 'There was an error sending your message.'}`, false);
+          success = false;
+        });
+      }
+    })
+    .catch(error => {
+      showPopup('There was an error sending your message.', false);
+      success = false;
+    });
+
     fetch('https://email.raise.systems/sendemail', {
       method: 'POST',
       body: formData,
@@ -350,14 +393,16 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         form.reset();
         const inputs = form.querySelectorAll('input, textarea, button');
         inputs.forEach(input => input.disabled = true);
-        showPopup('Message sent successfully!', true);
       } else {
         showPopup('There was an error sending your message.', false);
+        success = false;
       }
     })
     .catch(error => {
       showPopup('There was an error sending your message.', false);
+      success = false;
     });
+    if (success){showPopup('Message sent successfully!', true);}
   });
 });
 </script>
