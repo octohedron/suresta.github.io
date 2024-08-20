@@ -1,15 +1,12 @@
-name = "Landing Page Builder"
+name = "Suresta - Site Reliability and Assurance as a Service"
 license = "MIT"
-licenselink = "https://suresta.com/theme-landing-page/blob/main/LICENSE.md"
-description = "Easily build your landing page with pre-designed blocks. Create beautiful startup websites, marketing websites, and landing pages to accelerate your business growth."
+licenselink = "https://suresta.com/terms"
+description = "Suresta | Site Reliability and Assurance as a Service"
 
-homepage = "https://suresta.com/theme-landing-page"
-demosite = "https://theme-landing-page.netlify.app/"
+homepage = "https://suresta.com/"
 
-tags = ["landing", "docs", "blog", "responsive", "minimal", "light", "dark", "multilingual", "dark mode", "tailwind", "company", "gallery"]
-features = ["secure", "fast", "search", "dark mode", "widgets"]
 
 # If the theme has a single author
 [author]
-  name = "Gustavo"
+  name = "Gustavo Rodríguez"
   homepage = "https://suresta.com//"
