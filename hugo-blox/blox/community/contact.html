@@ -333,12 +333,11 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
   showPopup('Sending...', true);
 
-  grecaptcha.execute('6LfvTB0qAAAAAJKb-ayOnYI_fpA9ukwWIiU1ZL5X', {action: 'submit'}).then(function(token) {
+  grecaptcha.execute('6LfvTB0qAAAAAJKb-ayOnYI_fpA9ukwWIiU1ZL5X', { action: 'submit' }).then(function(token) {
     document.getElementById('g-recaptcha-response').value = token;
 
     const form = document.getElementById('contact-form');
     const formData = new FormData(form);
-    var success = true;
 
     // Prepare data for Chatwoot API
     const data = {
@@ -356,53 +355,46 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       }
     };
 
-    fetch('https://crm.suresta.com/public/api/v1/inboxes/wkkLU1Y1yG3NaRdnDj8ASb41/contacts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(data)
-    })
-    .then(response => {
-      if (response.ok) {
-        form.reset();
-        const inputs = form.querySelectorAll('input, textarea, button');
-        inputs.forEach(input => input.disabled = true);
-      } else {
-        response.json().then(data => {
-          showPopup(`Error: ${data.error || 'There was an error sending your message.'}`, false);
-          success = false;
-        });
-      }
-    })
-    .catch(error => {
-      showPopup('There was an error sending your message.', false);
-      success = false;
-    });
+    // Perform both fetch requests and wait for their results
+    Promise.all([
+      fetch('https://crm.suresta.com/public/api/v1/inboxes/wkkLU1Y1yG3NaRdnDj8ASb41/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }),
+      fetch('https://email.raise.systems/sendemail', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+    ]).then(async ([crmResponse, emailResponse]) => {
+      let crmSuccess = crmResponse.ok;
+      let emailSuccess = emailResponse.ok;
 
-    fetch('https://email.raise.systems/sendemail', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
+      if (!crmSuccess) {
+        let crmError = await crmResponse.json();
+        showPopup(`CRM Error: ${crmError.error || 'There was an error sending your message.'}`, false);
       }
-    })
-    .then(response => {
-      if (response.ok) {
+
+      if (!emailSuccess) {
+        showPopup('Email Error: There was an error sending your message.', false);
+      }
+
+      if (crmSuccess && emailSuccess) {
         form.reset();
         const inputs = form.querySelectorAll('input, textarea, button');
         inputs.forEach(input => input.disabled = true);
-      } else {
-        showPopup('There was an error sending your message.', false);
-        success = false;
+        showPopup('Message sent successfully!', true);
       }
-    })
-    .catch(error => {
+    }).catch(error => {
       showPopup('There was an error sending your message.', false);
-      success = false;
     });
-    if (success){showPopup('Message sent successfully!', true);}
   });
 });
+
 </script>
