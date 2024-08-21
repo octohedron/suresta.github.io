@@ -199,15 +199,18 @@
       }
 
       // Show banner if the cookie is not set
-      if (!getCookie(cookieName)) {
-          cookieBanner.classList.remove('translate-y-full');
+      if (getCookie(cookieName) === "accepted") {
+          cookieBanner.classList.add('hidden');
+          cookieBanner.classList.remove('translate-y-0');
+      } else {
+        cookieBanner.classList.remove('hidden');
           cookieBanner.classList.add('translate-y-0');
       }
 
       // Handle cookie acceptance
       cookieAcceptBtn.addEventListener('click', function() {
           setCookie(cookieName, 'accepted', 365);
-          cookieBanner.classList.add('translate-y-full');
+          cookieBanner.classList.add('hidden');
           cookieBanner.classList.remove('translate-y-0');
       });
       
