@@ -95,15 +95,14 @@
             {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
             <div
               class="relative w-full {{ if eq $index 0 }}
-                bg-green-100 border-green-500
+                bg-green-100 border-green-500 dark:bg-gray-900
               {{ else }}
                 bg-white dark:bg-gray-800
               {{ end }}
-               shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 2 }}
+               shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:bg-gray-100 hover:border-gray-300 hover:scale-105 hover:text-black
+               {{ if eq $index 2 }}
                 border-4 border-yellow-500 z-10
-              {{ end }}
-              "
-            >
+              {{ end }}">
               <div
                 class="item flex flex-col justify-between h-full {{- with $item.is_primary }}
                   item-primary
@@ -112,22 +111,19 @@
                 <header class="mb-6 text-center">
                   {{- with $item.badge }}
                     <span
-                      class="bg-{{ if eq $index 0 }}
-                        green-500
-                      {{ else }}
-                        yellow-500
-                      {{ end }} text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md"
+                      class="bg-{{ if eq $index 0 }}green-500{{ else }}yellow-500{{ end }} text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md"
                       >{{ . }}</span
                     >
                   {{ end -}}
                   {{- with $item.title }}
-                    {{- $titleColor := "gray-900 dark:text-white" -}}
                     {{- if eq $index 0 -}}
-                      {{- $titleColor = "green-700" -}}
+                      {{- $titleColor := "green-900" -}}
+                      {{- printf "<%s class='text-3xl font-bold mt-4 text-%s'>" $tag $titleColor | safeHTML -}}
+                    {{ else }}
+                      {{- printf "<%s class='text-3xl font-bold mt-4'>" $tag | safeHTML -}}
                     {{- end -}}
-                    {{- printf "<%s class='text-3xl font-bold mt-4 text-%s'>" $tag $titleColor | safeHTML -}}
-                    {{ . }}
-                    {{- printf "</%s>" $tag | safeHTML -}}
+                  {{ . }}
+                  {{- printf "</%s>" $tag | safeHTML -}}
                   {{ end -}}
                   {{ with $item.text }}
                     <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
@@ -135,7 +131,7 @@
                   {{ if eq $index 0 }}
                     <div class="price mt-6 mb-4">
                       <span
-                        class="text-3xl font-extrabold text-gray-900 dark:text-black"
+                        class="text-3xl font-extrabold"
                         >{{ $item.offer.price }} €</span
                       >
                       <span
@@ -147,7 +143,7 @@
                     {{ with $item.offer }}
                       <div class="price mt-6 mb-4">
                         <span
-                          class="price-value text-3xl font-extrabold text-gray-900 dark:text-white"
+                          class="price-value text-3xl font-extrabold"
                           data-original-price="{{ .price }}"
                           >{{ .price }} €</span
                         >
@@ -175,7 +171,7 @@
                 {{- with $item.arguments }}
                   <div class="content mb-6 flex-grow">
                     <ul
-                      class="list-none space-y-4 text-gray-700 dark:text-gray-400"
+                      class="list-none space-y-4"
                     >
                       {{- range . }}
                         <li class="flex items-start">
