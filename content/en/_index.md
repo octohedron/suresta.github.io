@@ -41,10 +41,10 @@ sections:
     content:
       heading:
         title: "Flexible pricing options"
-      column: 4
+      column: 6
       items:
         - title: "Free"
-          text: "Free alerting system for startups and small companies"
+          text: "Start off with code checks and free health checks to gain traction"
           offer:
             price: 0.00
             discount: ""
@@ -57,14 +57,68 @@ sections:
               text: "Alerts"
             - icon: "document-text"
               text: "Documentation"
+            - icon: "check-circle"
+              text: "Up to 3 automated healthchecks per project"
+            - icon: "shield-check"
+              text: "Up to 3 automated port scanning per project"
+            - icon: "clock"
+              text: "1 hour of free consultation per week"
           cta:
             text: "Get Started"
             url: "/contact"
-        - title: "Business"
-          text: "Suitable for small companies"
+        - title: "Starter"
+          text: "All free tier benefits with additional features"
           offer:
-            price: 349.49
-            discount: "10% off"
+            price: 93.00
+            discount: ""
+            frequency: "per month"
+            text: "Billed monthly"
+          arguments:
+            - icon: "eye"
+              text: "Storage capacity monitoring alerts"
+            - icon: "check-circle"
+              text: "Up to 10 automated healthchecks per project"
+            - icon: "shield-check"
+              text: "Basic vulnerability scanning for a single website"
+            - icon: "puzzle-piece"
+              text: "Basic linting setup with pre-commit hooks"
+            - icon: "clock"
+              text: "1 hour per week of software developer consultation"
+            - icon: "clipboard-document-check"
+              text: "1 hour per week of code and project reviews by a senior software engineer"
+          cta:
+            text: "Get Started"
+            url: "/contact"
+        - title: "Startup"
+          text: "All Starter tier benefits with advanced features"
+          offer:
+            price: 497.00
+            discount: ""
+            frequency: "per month"
+            text: "Billed monthly"
+          arguments:
+            - icon: "bell-alert"
+              text: "Automated alerts setup for up to 2 projects"
+            - icon: "cloud"
+              text: "Basic cloud backup solutions"
+            - icon: "circle-stack"
+              text: "Managed Database clusters setup"
+            - icon: "cog"
+              text: "Simple CI/CD pipeline setup using GitHub Actions"
+            - icon: "cloud-arrow-up"
+              text: "Basic DevOps and cloud management"
+            - icon: "shield-check"
+              text: "1 hour per week of security audits"
+            - icon: "clipboard-document-check"
+              text: "2 hours per week of senior software engineer consultation"
+          cta:
+            text: "Get Started"
+            url: "/contact"
+        - title: "Small business"
+          text: "Consultation and IT support for small businesses"
+          offer:
+            price: 11348.00
+            discount: ""
             frequency: "per month"
             text: "Billed monthly"
           arguments:
@@ -72,40 +126,70 @@ sections:
               text: "Technical leadership"
             - icon: "puzzle-piece"
               text: "Custom integrations"
+            - icon: "shield-check"
+              text: "Managed cybersecurity services"
+            - icon: "chart-bar"
+              text: "Regular updates and patch management"
+            - icon: "clipboard-document-check"
+              text: "Five hours monthly of system reviews"
+            - icon: "check-circle"
+              text: "Incident reports and post mortems"
+            - icon: "clock"
+              text: "10 hours per week of senior software engineer consultation"
+            - icon: "clipboard-document-list"
+              text: "5 hours per week of senior architect consultation"
           cta:
             text: "Get Started"
             url: "/contact"
         - title: "Enterprise"
-          text: "Suitable for small to medium companies"
-          badge: "Best Value"
+          text: "Comprehensive IT services for growing enterprises"
           offer:
-            price: 899.99
-            discount: "30% off"
-            frequency: "per month"
-            text: "Multiple"
-          arguments:
-            - icon: "link"
-              text: "Unlimited integrations"
-            - icon: "envelope"
-              text: "Email support"
-          cta:
-            text: "Get Started"
-            url: "/contact"
-        - title: "Full-service"
-          text: "Ideal for medium to large companies"
-          offer:
-            price: 3499.00
+            price: 47000.00
+            discount: ""
             frequency: "per month"
             text: "Billed monthly"
           arguments:
-            - icon: "clock"
-              text: "24/7 support"
-            - icon: "arrow-path"
-              text: "Unlimited hours"
+            - icon: "cloud"
+              text: "Cloud cost optimization and FinOps implementation"
+            - icon: "cog-8-tooth"
+              text: "Fully managed IT services for up to 100 projects"
+            - icon: "shield-check"
+              text: "SIEM solution with 24/7 monitoring"
+            - icon: "server-stack"
+              text: "Multi-cloud management"
+            - icon: "code-bracket-square"
+              text: "Advanced Kubernetes management with service mesh"
+            - icon: "clipboard-document-check"
+              text: "40 hours per week of senior architect and technical leadership"
           cta:
             text: "Get Started"
             url: "/contact"
+        - title: "Large enterprise"
+          text: "Contact us for custom enterprise solutions"
+          offer:
+            price: 0
+            discount: ""
+            frequency: ""
+            text: "Billed according to customized contract"
+          arguments:
+            - icon: "building-office-2"
+              text: "Enterprise IT management for 100+ projects"
+            - icon: "cloud"
+              text: "Multi-cloud architecture and FinOps"
+            - icon: "circle-stack"
+              text: "Data lake implementation and management"
+            - icon: "light-bulb"
+              text: "Advanced AI/ML implementations"
+            - icon: "shield-check"
+              text: "Quarterly red team exercises and penetration testing"
+            - icon: "clock"
+              text: "Monthly digital transformation consulting"
+          cta:
+            text: "Contact Us"
+            url: "/contact"
       background: false
+
+
 
   - block: stats
     content:

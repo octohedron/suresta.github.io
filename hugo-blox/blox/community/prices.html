@@ -7,7 +7,7 @@
 <section
   class="block-prices py-16 {{- with $data.background }}block-bg{{ end }}"
 >
-  <div class="container mx-auto px-6 max-w-screen-xl">
+  <div class="container mx-auto px-6 max-w-screen-2xl">
     {{- with $data.heading.title }}
       <h2
         class="text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white"
@@ -18,10 +18,10 @@
 
 
     <div
-      class="box bg-white sm:bg-purple-900 dark:bg-gray-800 sm:shadow-lg rounded-3xl p-0 sm:p-4"
+      class="box bg-white sm:bg-purple-900 dark:bg-gray-800 sm:shadow-lg rounded-xl p-0 sm:p-1"
     >
       <div
-        class="bg-white sm:bg-blue-200 dark:bg-blue-800 p-0 sm:p-3 rounded-lg sm:shadow-lg mb-8"
+        class="bg-white sm:bg-blue-200 dark:bg-blue-800 p-0 sm:p-3 rounded-lg sm:shadow-lg mb-1"
       >
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div
@@ -89,7 +89,7 @@
       {{- end -}}
       {{- with $data.items }}
         <div
-          class="grid gap-8 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1"
+          class="grid gap-1 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1"
         >
           {{ range $index, $item := . }}
             {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
@@ -99,15 +99,15 @@
               {{ else }}
                 bg-white dark:bg-gray-800
               {{ end }}
-               shadow-lg rounded-3xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 2 }}
+               shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105 {{ if eq $index 2 }}
                 border-4 border-yellow-500 z-10
               {{ end }}
               "
             >
               <div
-                class="item {{- with $item.is_primary }}
+                class="item flex flex-col justify-between h-full {{- with $item.is_primary }}
                   item-primary
-                {{ end }} p-8"
+                {{ end }} p-2"
               >
                 <header class="mb-6 text-center">
                   {{- with $item.badge }}
@@ -173,7 +173,7 @@
                 </header>
 
                 {{- with $item.arguments }}
-                  <div class="content mb-6">
+                  <div class="content mb-6 flex-grow">
                     <ul
                       class="list-none space-y-4 text-gray-700 dark:text-gray-400"
                     >
@@ -212,6 +212,7 @@
   </div>
 </section>
 
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const priceModifiers = document.querySelectorAll(".price-modifier");
@@ -228,11 +229,11 @@
         let newPrice = originalPrice;
 
         if (increasePrice) {
-          newPrice *= 1.5;
+          newPrice *= 1.2;
         }
 
-        if (addBasePrice && index < 2) {
-          newPrice += 100;
+        if (addBasePrice && index < 4) {
+          newPrice += 500;
         }
 
         newPrice += extraCost * 2550;
@@ -242,7 +243,10 @@
         }
 
         priceElement.textContent = newPrice.toFixed(2) + "  €";
-        if (extraCost <= 0) {
+
+        if (index === (priceElements.length -1)) {
+          priceElement.textContent = "";
+        } else if (extraCost <= 0) {
           document.getElementById("extra-cost").textContent = "0";
         }
       });
