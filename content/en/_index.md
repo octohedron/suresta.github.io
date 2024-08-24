@@ -43,8 +43,8 @@ sections:
         title: "Flexible pricing options"
       column: 6
       items:
-        - title: "Free"
-          text: "Start off with code checks and free health checks to gain traction"
+        - title: "Basic"
+          text: "Start off with our free solutions and checks"
           offer:
             price: 0.00
             discount: ""
@@ -66,7 +66,7 @@ sections:
           cta:
             text: "Get Started"
             url: "/contact"
-        - title: "Starter"
+        - title: "Essential"
           text: "All free tier benefits with additional features"
           offer:
             price: 93.00
@@ -89,7 +89,7 @@ sections:
           cta:
             text: "Get Started"
             url: "/contact"
-        - title: "Startup"
+        - title: "Advanced"
           text: "All Starter tier benefits with advanced features"
           offer:
             price: 497.00
@@ -114,7 +114,7 @@ sections:
           cta:
             text: "Get Started"
             url: "/contact"
-        - title: "Small business"
+        - title: "Professional"
           text: "Consultation and IT support for small businesses"
           offer:
             price: 11348.00
@@ -141,13 +141,13 @@ sections:
           cta:
             text: "Get Started"
             url: "/contact"
-        - title: "Enterprise"
+        - title: "Premium"
           text: "Comprehensive IT services for growing enterprises"
           offer:
-            price: 47000.00
+            price: -1
             discount: ""
-            frequency: "per month"
-            text: "Billed monthly"
+            frequency: ""
+            text: "Billed according to customized contract"
           arguments:
             - icon: "cloud"
               text: "Cloud cost optimization and FinOps implementation"
@@ -164,10 +164,10 @@ sections:
           cta:
             text: "Get Started"
             url: "/contact"
-        - title: "Large enterprise"
+        - title: "Elite"
           text: "Contact us for custom enterprise solutions"
           offer:
-            price: 0
+            price: -1
             discount: ""
             frequency: ""
             text: "Billed according to customized contract"
@@ -188,8 +188,6 @@ sections:
             text: "Contact Us"
             url: "/contact"
       background: false
-
-
 
   - block: stats
     content:

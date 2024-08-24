@@ -99,10 +99,7 @@
               {{ else }}
                 bg-white dark:bg-gray-800
               {{ end }}
-               shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:bg-gray-100 hover:border-gray-300 hover:scale-105 hover:text-black
-               {{ if eq $index 2 }}
-                border-4 border-yellow-500 z-10
-              {{ end }}">
+               shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:bg-gray-100 hover:border-gray-300 hover:scale-105 hover:text-black">
               <div
                 class="item flex flex-col justify-between h-full {{- with $item.is_primary }}
                   item-primary
@@ -240,8 +237,8 @@
 
         priceElement.textContent = newPrice.toFixed(2) + "  €";
 
-        if (index === (priceElements.length -1)) {
-          priceElement.textContent = "";
+        if (index > 2) {
+          priceElement.textContent = "-";
         } else if (extraCost <= 0) {
           document.getElementById("extra-cost").textContent = "0";
         }
