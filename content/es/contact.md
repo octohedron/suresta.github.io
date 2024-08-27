@@ -26,7 +26,7 @@ sections:
         - icon: x
           icon_pack: brands
           name: DM Us
-          link: 'https://twitter.com/suresta'
+          link: 'https://twitter.com/surestavlc'
       autolink: true
       form:
         provider: netlify

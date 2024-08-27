@@ -18,14 +18,14 @@
 
 
     <div
-      class="box bg-white sm:bg-purple-900 dark:bg-gray-800 sm:shadow-lg rounded-xl p-0 sm:p-1"
+      class="box bg-white sm:bg-purple-900 dark:bg-gray-800 sm:shadow-lg p-0 sm:p-1"
     >
       <div
-        class="bg-white sm:bg-blue-200 dark:bg-blue-800 p-0 sm:p-3 rounded-lg sm:shadow-lg mb-1"
+        class="bg-white sm:bg-blue-200 dark:bg-blue-800 p-0 sm:p-3 sm:shadow-lg mb-1"
       >
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div
-            class="hidden sm:flex bg-gray-50 dark:bg-gray-900 p-4 rounded-lg shadow-md items-center justify-center"
+            class="hidden sm:flex bg-gray-50 dark:bg-gray-900 p-4 shadow-md items-center justify-center"
           >
             <div class="flex justify-between items-center w-full">
               <label
@@ -38,12 +38,12 @@
               <input
                 type="checkbox"
                 id="increase-price"
-                class="price-modifier h-8 w-8 text-blue-600 focus:ring-blue-500 border-gray-300 rounded-lg shadow-md"
+                class="price-modifier h-8 w-8 text-blue-600 focus:ring-blue-500 border-gray-300 shadow-md"
               />
             </div>
           </div>
           <div
-            class="hidden sm:flex bg-gray-100 dark:bg-gray-900 p-4 rounded-lg shadow-md items-center justify-center"
+            class="hidden sm:flex bg-gray-100 dark:bg-gray-900 p-4 shadow-md items-center justify-center"
           >
             <div class="flex justify-between items-center w-full">
               <label
@@ -56,12 +56,12 @@
               <input
                 type="checkbox"
                 id="add-base-price"
-                class="price-modifier h-8 w-8 text-gray-600 focus:ring-gray-500 border-gray-300 rounded-lg shadow-md"
+                class="price-modifier h-8 w-8 text-gray-600 focus:ring-gray-500 border-gray-300 shadow-md"
               />
             </div>
           </div>
           <div
-            class="hidden sm:flex bg-gray-200 dark:bg-gray-900 p-4 rounded-lg shadow-md items-center justify-center"
+            class="hidden sm:flex bg-gray-200 dark:bg-gray-900 p-4 shadow-md items-center justify-center"
           >
             <div class="flex justify-between items-center w-full">
               <label
@@ -74,7 +74,7 @@
               <input
                 type="number"
                 id="extra-cost"
-                class="price-modifier h-12 w-24 text-xl text-center text-gray-900 dark:text-black bg-gray-300 border border-gray-900 dark:border-gray-500 rounded-lg focus:ring-yellow-500 focus:border-yellow-500"
+                class="price-modifier h-12 w-24 text-xl text-center text-gray-900 dark:text-black bg-gray-300 border border-gray-900 dark:border-gray-500 focus:ring-yellow-500 focus:border-yellow-500"
                 min="0"
                 step="1"
               />
@@ -99,7 +99,8 @@
               {{ else }}
                 bg-white dark:bg-gray-800
               {{ end }}
-               shadow-lg rounded-xl overflow-hidden transform transition-transform duration-300 hover:bg-gray-100 hover:border-gray-300 hover:scale-105 hover:text-black">
+               shadow-lg overflow-hidden transform transition-transform duration-300 hover:bg-gray-100 hover:border-gray-300 hover:text-black"
+            >
               <div
                 class="item flex flex-col justify-between h-full {{- with $item.is_primary }}
                   item-primary
@@ -108,7 +109,11 @@
                 <header class="mb-6 text-center">
                   {{- with $item.badge }}
                     <span
-                      class="bg-{{ if eq $index 0 }}green-500{{ else }}yellow-500{{ end }} text-white rounded-full px-3 py-1 text-sm font-semibold inline-block shadow-md"
+                      class="bg-{{ if eq $index 0 }}
+                        green-500
+                      {{ else }}
+                        yellow-500
+                      {{ end }} text-white px-3 py-1 text-sm font-semibold inline-block shadow-md"
                       >{{ . }}</span
                     >
                   {{ end -}}
@@ -119,74 +124,60 @@
                     {{ else }}
                       {{- printf "<%s class='text-3xl font-bold mt-4'>" $tag | safeHTML -}}
                     {{- end -}}
-                  {{ . }}
-                  {{- printf "</%s>" $tag | safeHTML -}}
+                    {{ . }}
+                    {{- printf "</%s>" $tag | safeHTML -}}
                   {{ end -}}
                   {{ with $item.text }}
                     <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
                   {{ end }}
-                  {{ if eq $index 0 }}
+                  {{ with $item.offer }}
                     <div class="price mt-6 mb-4">
                       <span
-                        class="text-3xl font-extrabold"
-                        >{{ $item.offer.price }} €</span
+                        class="price-value text-3xl font-extrabold"
+                        data-original-price="{{ .price }}"
+                        >{{ .price }} €</span
                       >
-                      <span
-                        class="text-sm text-gray-600 dark:text-gray-400 block"
-                        >{{ $item.offer.frequency }}</span
-                      >
-                    </div>
-                  {{ else }}
-                    {{ with $item.offer }}
-                      <div class="price mt-6 mb-4">
-                        <span
-                          class="price-value text-3xl font-extrabold"
-                          data-original-price="{{ .price }}"
-                          >{{ .price }} €</span
+                      {{- if .discount }}
+                        <span class="text-sm text-red-500 ml-2"
+                          >{{ .discount }}</span
                         >
-                        {{- if .discount }}
-                          <span class="text-sm text-red-500 ml-2"
-                            >{{ .discount }}</span
-                          >
-                        {{ end -}}
-                        {{- if .frequency }}
-                          <span
-                            class="text-sm text-gray-600 dark:text-gray-400 block"
-                            >{{ .frequency }}</span
-                          >
-                        {{ end -}}
-                      </div>
-                      {{ with .text }}
-                        <p class="text-gray-500 dark:text-gray-400 mt-2">
-                          {{ . }}
-                        </p>
-                      {{ end }}
+                      {{ end -}}
+                      {{- if .frequency }}
+                        <span
+                          class="text-sm text-gray-600 dark:text-gray-400 block"
+                          >{{ .frequency }}</span
+                        >
+                      {{ end -}}
+                    </div>
+                    {{ with .text }}
+                      <p class="text-gray-500 dark:text-gray-400 mt-2">
+                        {{ . }}
+                      </p>
                     {{ end }}
                   {{ end }}
                 </header>
 
                 {{- with $item.arguments }}
-                  <div class="content mb-6 flex-grow">
-                    <ul
-                      class="list-none space-y-4"
-                    >
-                      {{- range . }}
-                        <li class="flex items-start">
-                          {{- with .icon -}}
-                            {{ partial "functions/get_icon.html" (dict "name" . "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2\"") }}
-                          {{ end -}}
-                          <span>{{ .text }}</span>
-                        </li>
-                      {{ end -}}
-                    </ul>
-                  </div>
-                {{ end -}}
+                <div class="content mb-6 flex-grow">
+                  <ul class="list-none space-y-4">
+                    {{- range $index, $argument := . }}
+                      <li class="flex items-start {{ if gt $index 2 }}hidden sm:flex{{ end }}">
+                        {{- with $argument.icon }}
+                          {{ partial "functions/get_icon.html" (dict "name" . "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2\"") }}
+                        {{ end -}}
+                        <span>{{ $argument.text }}</span>
+                      </li>
+                    {{ end -}}
+                  </ul>
+                </div>
+              {{ end -}}
+              
 
                 {{- with $item.cta }}
                   <footer class="mt-6 text-center">
                     <a
                       href="{{ .url }}"
-                      class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300"
+                      class="inline-block bg-blue-600 text-white px-6 py-3 shadow-lg hover:bg-blue-700 transition duration-300"
                       >{{ .text }}</a
                     >
                   </footer>
@@ -204,7 +195,6 @@
     </div>
   </div>
 </section>
-
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -225,7 +215,7 @@
           newPrice *= 1.2;
         }
 
-        if (addBasePrice && index < 4) {
+        if (addBasePrice && index > 0 && index < 4) {
           newPrice += 500;
         }
 
@@ -234,8 +224,9 @@
         if (increasePrice) {
           newPrice *= 1.5;
         }
-
-        priceElement.textContent = newPrice.toFixed(2) + "  €";
+        if (index > 0) {
+          priceElement.textContent = newPrice.toFixed(2) + "  €";
+        }
 
         if (index > 2) {
           priceElement.textContent = "-";
