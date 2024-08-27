@@ -108,7 +108,7 @@ sections:
             - icon: "cloud-arrow-up"
               text: "Basic DevOps and cloud management services"
             - icon: "shield-check"
-              text: "1 hour per week of security audits and senior software engineer consultation"
+              text: "1 hour per month of security audits and senior software engineer consultation"
           cta:
             text: "Get Started"
             url: "/contact"
