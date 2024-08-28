@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Our services
-        url: /
+        url: /services
       announcement:
         text: "Announcing the world's first Site Reliability and Assurance Service Provider."
         link:

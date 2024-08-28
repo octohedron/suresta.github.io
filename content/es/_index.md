@@ -18,7 +18,7 @@ sections:
         icon: rocket-launch
       secondary_action:
         text: Our services
-        url: https://suresta.com/
+        url: /services
       announcement:
         text: "Announcing the world's first Site Reliability and Assurance Service Provider."
         link:
@@ -37,6 +37,153 @@ sections:
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
+  - block: prices
+    content:
+      heading:
+        title: "Flexible pricing options"
+      column: 6
+      items:
+        - title: "Basic"
+          text: "Start off with our free solutions and essential checks."
+          offer:
+            price: 0.00
+            discount: ""
+            frequency: "Free"
+            text: "Special offer"
+          arguments:
+            - icon: "eye"
+              text: "Basic observability tools"
+            - icon: "bell-alert"
+              text: "Simple alerts and notifications"
+            - icon: "document-text"
+              text: "Access to documentation resources"
+            - icon: "check-circle"
+              text: "Up to 3 automated health checks per project"
+            - icon: "shield-check"
+              text: "Up to 3 automated port scans per project"
+            - icon: "clock"
+              text: "1 hour of free consultation per month"
+          cta:
+            text: "Get Started"
+            url: "/contact"
+        - title: "Essential"
+          text: "All free tier benefits with additional essential features."
+          offer:
+            price: 43.00
+            discount: ""
+            frequency: "per month"
+            text: "Billed monthly"
+          arguments:
+            - icon: "eye"
+              text: "Storage capacity monitoring alerts"
+            - icon: "check-circle"
+              text: "Up to 10 automated health checks per project"
+            - icon: "shield-check"
+              text: "Basic vulnerability scanning for one website"
+            - icon: "puzzle-piece"
+              text: "Basic linting setup with pre-commit hooks"
+            - icon: "clock"
+              text: "1 hour per month of software developer consultation"
+            - icon: "clipboard-document-check"
+              text: "1 hour per month of code reviews by a senior engineer"
+          cta:
+            text: "Get Started"
+            url: "/contact"
+        - title: "Advanced"
+          text: "All Essential tier benefits with even more advanced features."
+          offer:
+            price: 97.00
+            discount: ""
+            frequency: "per month"
+            text: "Billed monthly"
+          arguments:
+            - icon: "bell-alert"
+              text: "Automated alerts setup for up to 2 projects"
+            - icon: "cloud"
+              text: "Basic cloud backup solutions included"
+            - icon: "circle-stack"
+              text: "Managed database clusters setup and support"
+            - icon: "cog"
+              text: "Simple CI/CD pipeline setup with GitHub Actions"
+            - icon: "cloud-arrow-up"
+              text: "Basic DevOps and cloud management services"
+            - icon: "shield-check"
+              text: "1 hour per month of security audits and senior software engineer consultation"
+          cta:
+            text: "Get Started"
+            url: "/contact"
+        - title: "Professional"
+          text: "Comprehensive consultation and IT support."
+          offer:
+            price: -1
+            discount: ""
+            frequency: "monthly or yearly"
+            text: "Custom contract"
+          arguments:
+            - icon: "academic-cap"
+              text: "Technical leadership and mentorship"
+            - icon: "puzzle-piece"
+              text: "Custom integrations and solutions"
+            - icon: "shield-check"
+              text: "Managed cybersecurity services"
+            - icon: "check-circle"
+              text: "Incident reports and post-mortem analysis"
+            - icon: "clock"
+              text: "1 hour per week of senior software engineer consultation"
+            - icon: "clipboard-document-list"
+              text: "1 hour per month of senior architect consultation and system reviews"
+          cta:
+            text: "Contact Us"
+            url: "/contact"
+        - title: "Premium"
+          text: "Comprehensive and tailored IT consulting."
+          offer:
+            price: -1
+            discount: ""
+            frequency: "monthly or yearly"
+            text: "Custom contract"
+          arguments:
+            - icon: "cloud"
+              text: "Cloud cost optimization and FinOps implementation"
+            - icon: "cog-8-tooth"
+              text: "Fully managed IT services for up to 100 projects"
+            - icon: "shield-check"
+              text: "SIEM solutions with 24/7 monitoring"
+            - icon: "server-stack"
+              text: "Multi-cloud management and support"
+            - icon: "code-bracket-square"
+              text: "Advanced Kubernetes management with service mesh"
+            - icon: "clipboard-document-check"
+              text: "40 hours per week of senior architect and technical leadership"
+          cta:
+            text: "Contact Us"
+            url: "/contact"
+        - title: "Elite"
+          text: "Custom enterprise solutions to fit your unique needs."
+          offer:
+            price: -1
+            discount: ""
+            frequency: "monthly or yearly"
+            text: "Custom contract"
+          arguments:
+            - icon: "building-office-2"
+              text: "Enterprise IT management for 100+ projects"
+            - icon: "cloud"
+              text: "Multi-cloud architecture and FinOps"
+            - icon: "circle-stack"
+              text: "Data lake implementation and management"
+            - icon: "light-bulb"
+              text: "Advanced AI/ML implementations"
+            - icon: "shield-check"
+              text: "Quarterly red team exercises and penetration testing"
+            - icon: "clock"
+              text: "Monthly digital transformation consulting"
+          cta:
+            text: "Contact Us"
+            url: "/contact"
+      background: false
+
+
   - block: stats
     content:
       items:
@@ -62,7 +209,7 @@ sections:
     id: features
     content:
       title: Features
-      text: Our team offers dozens of technical and business services to suit your needs 
+      text: Our team offers dozens of technical and business services to suit your needs
       items:
         - name: Optimize Security
           icon: magnifying-glass
@@ -94,11 +241,11 @@ sections:
             - "Avoid outages"
             - "Provide peace of mind on the integrity and realiability of your projects"
             - "Balance reliability and progress"
-            
+
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
-            text:  Read More about SRE
+            text: Read More about SRE
             url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
         - title: Why a subscription?
           text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexibility without sacrificing value
@@ -111,25 +258,24 @@ sections:
           image: coffee.jpg
           button:
             text: Get Started
-            url: https://suresta.com/templates/
+            url: /contact/
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
   - block: testimonials
     content:
-      title: "Our Team Members' Clients"
-      text: "" 
+      title: "Our Clients"
+      text: "What our clients are saying about our services"
       items:
-        - name: "Richard Jefferson"
-          role: "Team Lead"
-          # Upload image to `assets/media/` and reference the filename here
+        - name: "Satisfied Customer"
+          role: "Manager at GS"
+          image: "testimonial-2.jpg"
+          text: "Our Cloud Enablement team brought in Suresta to manage a complex identity and access management application. Their technical expertise, covering SAML, OIDC, OAuth, Go, React, AWS serverless, and Azure AD, was exactly what we needed. Thanks to their contributions, we saw significant improvements in application stability, test coverage, and logging clarity. The team communicates effectively and is a pleasure to work with. In addition to their technical prowess, they are genuinely nice people that I highly recommend."
+        - name: "Satisfied Customer"
+          role: "Manager at the EPO"
           image: ""
-          text: ""
-        - name: "Richard Smith"
-          role: "Marketing Executive at X"
-          # Upload image to `assets/media/` and reference the filename here
-          image: "testimonial-1.jpg"
-          text: ""
+          text: "Suresta has proven to be an exceptional partner, providing developers with all the skills one would want in top-notch software professionals. Their mastery of front-end programming languages has been invaluable to both our company and our clients. The team consistently delivers on time, helping nurture long-term client relationships. Their work is always top-tier, and they are open to feedback and committed to continuous improvement. Self-motivated and eager to solve problems, Suresta has been a great asset to our projects."
+
     design:
       spacing:
         # Reduce bottom spacing so the testimonial appears vertically centered between sections
@@ -140,7 +286,7 @@ sections:
       text: Contact us below
       button:
         text: Get Started
-        url: https://suresta.com/templates/
+        url: /contact/
     design:
       card:
         # Card background color (CSS class)

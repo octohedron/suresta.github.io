@@ -20,17 +20,19 @@ en:
         weight: 20
       - name: Contact
         url: /contact/
-        weight: 20
+        weight: 30
       - name: Solutions
         url: /#solutions
-        weight: 30
-      - name: Resources
         weight: 40
+      - name: Services
+        url: /services
+        weight: 50
+      - name: Resources
+        weight: 60
         hasChildren: true
       - parent: Resources
         name: Blog
         url: blog/
-
 
 # Uncomment the lines below to configure your website in a second language.
 es:
@@ -49,14 +51,16 @@ es:
         weight: 20
       - name: Contacto
         url: /contact/
-        weight: 20
+        weight: 30
       - name: Soluciones
         url: /#solutions
-        weight: 30
-      - name: Material
         weight: 40
+      - name: Servicios
+        url: /services
+        weight: 50
+      - name: Material
+        weight: 60
         hasChildren: true
       - parent: Material
         name: Blog
         url: blog/
-
