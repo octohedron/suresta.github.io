@@ -3,6 +3,8 @@
 {{ $block := .wcBlock }}
 {{ $data := $block.content }}
 
+{{ $lang := site.Language.Lang }}
+{{ $items := index site.Data $lang "plans" "items" }}
 
 <section
   class="block-prices py-16 {{- with $data.background }}block-bg{{ end }}"
@@ -87,11 +89,11 @@
       {{- with $data.column -}}
         {{- $column = . -}}
       {{- end -}}
-      {{- with $data.items }}
+      {{- if $items }}
         <div
           class="grid gap-1 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1"
         >
-          {{ range $index, $item := . }}
+          {{ range $index, $item := $items }}
             {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
             <div
               class="relative w-full {{ if eq $index 0 }}
@@ -158,20 +160,23 @@
                 </header>
 
                 {{- with $item.arguments }}
-                <div class="content mb-6 flex-grow">
-                  <ul class="list-none space-y-4">
-                    {{- range $index, $argument := . }}
-                      <li class="flex items-start {{ if gt $index 2 }}hidden sm:flex{{ end }}">
-                        {{- with $argument.icon }}
-                          {{ partial "functions/get_icon.html" (dict "name" . "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2\"") }}
-                        {{ end -}}
-                        <span>{{ $argument.text }}</span>
-                      </li>
-                    {{ end -}}
-                  </ul>
-                </div>
-              {{ end -}}
-              
+                  <div class="content mb-6 flex-grow">
+                    <ul class="list-none space-y-4">
+                      {{- range $index, $argument := . }}
+                        <li
+                          class="flex items-start {{ if gt $index 2 }}
+                            hidden sm:flex
+                          {{ end }}"
+                        >
+                          {{- with $argument.icon }}
+                            {{ partial "functions/get_icon.html" (dict "name" . "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2\"") }}
+                          {{ end -}}
+                          <span>{{ $argument.text }}</span>
+                        </li>
+                      {{ end -}}
+                    </ul>
+                  </div>
+                {{ end -}}
 
                 {{- with $item.cta }}
                   <footer class="mt-6 text-center">
