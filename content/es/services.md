@@ -1,6 +1,6 @@
 ---
 title: "Our Services"
-description: "Explore the full range of IT consultancy and support services offered by Suresta. From essential checks to comprehensive enterprise solutions, we provide tailored IT services to meet the needs of any business."
+description: "Explore the full range of IT consultancy and support services offered by Suresta. From basic checks to comprehensive enterprise solutions, we provide tailored IT services to meet the needs of any business."
 type: "page"
 ---
 
