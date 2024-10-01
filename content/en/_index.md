@@ -10,7 +10,7 @@ design:
 sections:
   - block: hero
     content:
-      title: "Full-Service Software Reliability Provider"
+      title: "Protect Access, Manage Identities: Tailored IAM Solutions for Your Business"
       text: SIMPLE SUBSCRIPTION SERVICE, CANCEL ANY TIME.
       primary_action:
         text: Get Started
@@ -20,7 +20,7 @@ sections:
         text: Our services
         url: /services
       announcement:
-        text: "Announcing the world's first Site Reliability and Assurance Service Provider."
+        text: "Announcing the world's safest and simplest IAM security-focused provider"
         link:
           text: "Read more"
           url: "/blog/launching-suresta/"
@@ -70,51 +70,51 @@ sections:
     id: features
     content:
       title: Features
-      text: Our team offers dozens of technical and business services to suit your needs
+      text: Our team offers a wide range of Identity and Access Management (IAM) services to fit your needs
       items:
-        - name: Optimize Security
+        - name: Strengthen Security
           icon: magnifying-glass
-          description: Options include incident reports and post mortems, as well as tracing, automated monitoring, and other features to mitigate risk, employ proactive measures, and manage your exposure
-        - name: Resolve issues through specialists
+          description: Incident reports, post-mortems, and automated monitoring help mitigate security risks, implement proactive measures, and manage IAM-related vulnerabilities
+        - name: Resolve IAM Issues with Experts
           icon: bolt
-          description: Discover on-call support and personalized assistance, as well as alert systems and observability tools to find and solve problems quickly
-        - name: Cloud
+          description: Access on-call IAM specialists, personalized support, and alert systems to quickly resolve access control, identity verification, and authentication issues
+        - name: Cloud IAM Integration
           icon: sparkles
-          description: Manage cloud capacity, costs, and debugging in services like Azure, Google Cloud, AWS, and Kubernetes
-        - name: Coding Assistance
+          description: Manage IAM across cloud platforms like Azure AD, AWS, Google Cloud, and Kubernetes to ensure secure access management and compliance
+        - name: Identity Lifecycle Assistance
           icon: code-bracket
-          description: Confer with our experts in languages like Golang, Python, Typescript, Javascript, Java, and others to troubleshoot and refactor your code
-        - name: Highly Rated
+          description: Consult with our experts to streamline user provisioning, SAML, OAuth, OIDC, and MFA implementations, as well as troubleshoot IAM configurations
+        - name: Proven Expertise
           icon: star
-          description: World-class expertise, including projects with Goldman Sachs, The European Patent Office, and dozens of other industry leaders
-        - name: Personalize and Customize
+          description: Trusted by industry leaders such as Goldman Sachs and The European Patent Office for secure and scalable IAM solutions
+        - name: Customized IAM Solutions
           icon: rectangle-group
-          description: Our world-class customer service team will work with you to find a subscription package that works for you and your needs, no more no less
+          description: Our team works closely with you to customize your IAM solutions, ensuring your specific identity management needs are met efficiently
+
   - block: cta-image-paragraph
     id: solutions
     content:
       items:
         - title: Who are we?
-          text: Suresta is software development consultancy and software services provider based in Valencia, Spain, specializing in site reliability engineering (SRE) for all types of software. The link between development and operations is critical, and we're here to help you build it.
+          text: Suresta is an Identity and Access Management (IAM) consultancy and software services provider based in Valencia, Spain. We specialize in securing digital identities and streamlining access management across multiple platforms.
           feature_icon: check
           features:
-            - "Bridge the gap between developers and operations"
-            - "Avoid outages"
-            - "Provide peace of mind on the integrity and realiability of your projects"
-            - "Balance reliability and progress"
-
+            - "Enable seamless authentication and authorization"
+            - "Prevent unauthorized access and mitigate identity breaches"
+            - "Ensure compliance with security standards"
+            - "Balance security and user experience"
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
-            text: Read More about SRE
+            text: Learn More about IAM Solutions
             url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
         - title: Why a subscription?
-          text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexibility without sacrificing value
+          text: Our subscription model provides flexibility and value in IAM management. Instead of high contractor fees or the long process of hiring internal staff, you get expert IAM services tailored to your needs.
           feature_icon: bolt
           features:
-            - "No contracts laden with obligations, contingincies, or high payments"
-            - "No HR paperwork or lengthy training for new employees"
-            - "Services fitted to your needs, for as long as you need it"
+            - "No long-term contracts or hidden fees"
+            - "No need for complex onboarding or training for new staff"
+            - "Services customized to your IAM requirements for as long as you need them"
           # Upload image to `assets/media/` and reference the filename here
           image: coffee.jpg
           button:
@@ -123,6 +123,7 @@ sections:
     design:
       # Section background color (CSS class)
       css_class: "bg-gray-100 dark:bg-gray-900"
+
   - block: testimonials
     content:
       title: "Our Clients"

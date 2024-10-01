@@ -26,11 +26,15 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 bio: |
-  Dedicated B2B Senior Software Engineer and DevOps Consultant with a 15-year track record of success in the development and implementation of cutting-edge software solutions and technical leadership. Currently seeking remote opportunities exclusively as a contractor or B2B partner.
+  Ingeniero de Software B2B Senior, Consultor de DevOps y IAM Experimentado
 
-  Adept at working on web, desktop, and mobile applications, distributed systems, back-end, and IoT software, I have collaborated with top European researchers from organizations such as TNO and Salzburg Research. Skilled in a wide array of technologies, my expertise lies in managing and processing massive volumes of data, building data pipelines, and implementing automation strategies.
+  Como propietario de Suresta, aporto más de 15 años de experiencia en el desarrollo e implementación de soluciones de software innovadoras con un fuerte enfoque en la Gestión de Identidad y Acceso (IAM). Mi experiencia abarca una amplia gama de tecnologías de IAM, incluyendo SAML, OIDC, OAuth2, OAuth, JWT, RBAC y ABAC.
 
-  As a seasoned remote professional, I am highly adaptable and equipped to seamlessly integrate into your team, providing exceptional value to your projects as a freelance/contractor or B2B collaborator. Let's connect and explore how I can contribute to your organization's success.
+  Tengo un historial comprobado en liderar proyectos técnicos y colaborar con líderes de la industria, mejorando los protocolos de seguridad y optimizando los procesos de autenticación de usuarios. Mi trabajo abarca aplicaciones web, de escritorio y móviles, así como sistemas distribuidos y software IoT, lo que me permite abordar desafíos complejos y generar soluciones impactantes.
+
+  Con un fuerte énfasis en la seguridad de los datos y el cumplimiento normativo, soy experto en diseñar e implementar marcos de IAM escalables que protegen información sensible mientras garantizan experiencias de usuario sin inconvenientes. Mi experiencia incluye la gestión y el procesamiento de grandes volúmenes de datos y el desarrollo de estrategias de automatización para mejorar la eficiencia operativa, así como soluciones de software IAM de vanguardia.
+
+  Conectemos y hablemos sobre cómo Suresta puede potenciar su negocio con soluciones robustas de IAM adaptadas a sus requisitos específicos.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -56,9 +60,5 @@ profiles:
 highlight_name: true
 
 # Author's website URL
-website: ""
+website: "https://suresta.com"
 ---
-
-Gustavo Rodríguez is a Software Architect, Technical Leader at the Stanford AI Lab. Her research interests include
-distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops
-self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
