@@ -1,107 +1,87 @@
 ---
 
 title: "Our Services"
-description: "Explore the full range of IT consultancy and support services offered by Suresta. From essential checks to comprehensive enterprise solutions, we provide tailored IT services to meet the unique needs of your business."
+description: "Explore the full range of Identity and Access Management (IAM) services offered by Suresta. From foundational IAM frameworks to comprehensive enterprise-grade solutions, we deliver tailored security services to meet the unique requirements of your business."
 type: "page"
 
 ---
 
-At Suresta, we understand that each business has distinct IT requirements. That’s why we offer a comprehensive suite of services designed to provide the flexibility, expertise, and support necessary to keep your systems running smoothly. Whether you're a startup embarking on your journey or an established enterprise seeking to optimize your IT infrastructure, our team of seasoned professionals is dedicated to helping you achieve your goals. Explore our service offerings to discover the perfect solution for your business.
+At Suresta, we specialize in securing your digital environment with identity and access management (IAM) solutions designed to protect sensitive information, streamline user authentication, and enhance compliance. Whether you’re a startup prioritizing foundational security or an enterprise scaling its IAM infrastructure, our expert team is committed to supporting your business’s needs. Discover our service packages below to find the best fit for your organization.
 
-## Basic Service Package
+## Essential IAM Service Package
 
-Our **Basic Service Package** is ideal for businesses looking to initiate essential IT support with no upfront costs. This package includes fundamental tools and checks to ensure your systems are operational, providing a solid foundation for your IT needs.
-
-### Key Features
-
-- **Basic Observability Tools:** Monitor key metrics and gain insights into your systems to ensure everything is functioning as expected.
-- **Simple Alerts and Notifications:** Stay informed with alerts that keep you updated on the status of your systems, allowing for quick responses to potential issues.
-- **Access to Documentation Resources:** Our extensive documentation resources equip you with the knowledge needed to manage your IT environment effectively.
-- **Automated Health Checks:** Up to three automated health checks per project ensure optimal performance, reducing downtime risks and maintaining service availability.
-- **Automated Port Scans:** Conduct up to three automated port scans per project to identify vulnerabilities and secure your network.
-- **Free Consultation:** Enjoy one hour of free consultation per month with our IT experts, providing valuable insights and guidance.
-
-The Basic Service Package offers a strong start for businesses aiming to establish a reliable IT infrastructure with minimal investment.
-
-## Essential Service Package
-
-Building on the Basic Package, our **Essential Service Package** adds enhanced features for more comprehensive IT support. This package is perfect for businesses ready to enhance the security and optimization of their systems.
+Our **Essential IAM Service Package** is ideal for businesses aiming to establish fundamental identity and access controls. This package provides the essential tools and processes to manage user access and ensure basic security compliance.
 
 ### Key Features
 
-- **All Basic Tier Benefits:** Enjoy all the benefits of the Basic Service Package, plus additional features to safeguard and streamline operations.
-- **Storage Capacity Monitoring Alerts:** Prevent outages with alerts that notify you when storage capacity is nearing its limits.
-- **Expanded Health Checks:** Perform up to ten automated health checks per project for thorough system monitoring and prompt issue identification.
-- **Basic Vulnerability Scanning:** Protect your website with basic vulnerability scanning to identify security weaknesses and receive mitigation recommendations.
-- **Basic Linting Setup:** Improve code quality with basic linting setup, helping your development team maintain clean, error-free code.
-- **Software Developer Consultation:** Benefit from one hour per month of consultation with a software developer for expert advice on coding practices and troubleshooting.
-- **Code Reviews:** Receive one hour per month of code reviews by a senior engineer, providing critical feedback to enhance code quality and security.
+- **User Authentication Setup:** Implement secure, basic authentication protocols to verify users’ identities.
+- **Access Control Policies:** Establish initial role-based access control (RBAC) policies to govern user permissions effectively.
+- **Basic SAML and OAuth2 Integration:** Simplify identity management with SAML and OAuth2 support for streamlined user sign-ins.
+- **Compliance Guidance:** Ensure adherence to foundational security standards with our compliance support and documentation resources.
+- **Free Consultation:** Enjoy one hour of free consultation per month for IAM guidance and insights.
 
-The Essential Service Package equips your business with the tools and expertise needed for effective IT management, ensuring higher performance and security.
+The Essential IAM Service Package provides a secure foundation for organizations just beginning to prioritize identity management.
 
-## Advanced Service Package
+## Advanced IAM Service Package
 
-For businesses looking to scale their IT operations, our **Advanced Service Package** offers an expanded suite of services. This package supports growing businesses with features that enhance operational efficiency and resilience.
+The **Advanced IAM Service Package** expands on the Essential Package, delivering comprehensive tools for businesses looking to strengthen security and streamline access management further.
 
 ### Key Features
 
-- **All Essential Tier Benefits:** Access all features of the Essential Service Package, along with advanced functionalities for complex IT needs.
-- **Automated Alerts Setup:** Receive automated alerts setup for up to two projects for continuous monitoring and quick issue resolution.
-- **Basic Cloud Backup Solutions:** Protect your data with basic cloud backup solutions, safeguarding critical information.
-- **Managed Database Clusters:** Simplify database management with support for managed database clusters, optimizing performance.
-- **CI/CD Pipeline Setup:** Streamline development workflows with a CI/CD pipeline setup using GitHub Actions for automated testing and deployment.
-- **Basic DevOps and Cloud Management Services:** Leverage expertise in DevOps and cloud management to enhance operational processes.
-- **Security Audits and Consultation:** Gain peace of mind with one hour per month of security audits and consultation by a senior software engineer.
+- **All Essential Tier Benefits:** Includes all features from the Essential IAM Service Package, with additional options to enhance IAM capabilities.
+- **Multi-Factor Authentication (MFA):** Add an extra layer of security with customizable MFA solutions.
+- **Advanced Access Controls:** Implement both RBAC and attribute-based access control (ABAC) for more granular permission settings.
+- **Expanded SSO and API Integration:** Leverage single sign-on (SSO) and secure API integration for seamless user experiences across platforms.
+- **IAM Health Checks and Vulnerability Scanning:** Perform up to ten health checks per project and receive detailed reports for proactive security management.
+- **Developer Consultation:** One hour per month with an IAM consultant for best practices in identity management.
 
-The Advanced Service Package provides robust solutions for businesses requiring sophisticated IT management and support, enabling them to scale confidently.
+The Advanced IAM Service Package empowers growing businesses with expanded control over identity and access, ensuring higher levels of security and functionality.
 
-## Professional Service Package
+## Enterprise IAM Service Package
 
-Our **Professional Service Package** is designed for businesses needing comprehensive consultation and IT support. This package offers deeper engagement with our experts, providing strategic insights and technical leadership.
-
-### Key Features
-
-- **Technical Leadership and Mentorship:** Access expert guidance for your team through complex challenges, fostering innovation.
-- **Custom Integrations and Solutions:** Benefit from solutions tailored to your business's unique needs.
-- **Managed Cybersecurity Services:** Protect your business with proactive monitoring, threat detection, and incident response.
-- **Incident Reports and Post-Mortem Analysis:** Receive detailed reports and analysis to understand the root cause of issues.
-- **Senior Engineer Consultation:** Enjoy one hour per week of consultation with a senior software engineer for ongoing support.
-- **Architect Consultation and System Reviews:** Gain one hour per month of consultation with a senior architect for strategic reviews of your IT infrastructure.
-
-The Professional Service Package is ideal for businesses seeking dedicated support and strategic IT consultation.
-
-## Premium Service Package
-
-Designed for businesses that require a fully managed IT solution, our **Premium Service Package** offers comprehensive support tailored to your needs. This package provides end-to-end management, allowing you to focus on core activities.
+For larger businesses and enterprises, our **Enterprise IAM Service Package** offers advanced IAM tools and support for complex, multi-tiered environments.
 
 ### Key Features
 
-- **Cloud Cost Optimization and FinOps:** Optimize your cloud spending with our implementation services for maximum value from your investments.
-- **Fully Managed IT Services:** Enjoy fully managed IT services for up to 100 projects, ensuring effective maintenance and optimization.
-- **SIEM Solutions with 24/7 Monitoring:** Enhance your security posture with SIEM solutions and round-the-clock monitoring.
-- **Multi-Cloud Management and Support:** Optimize your IT environment across multiple cloud platforms for seamless operation.
-- **Advanced Kubernetes Management:** Benefit from advanced management of Kubernetes environments for deploying and scaling applications.
-- **Senior Architect and Technical Leadership:** Access up to 40 hours per week of consultation from senior architects and technical leaders for guidance in driving your IT strategy.
+- **All Advanced Tier Benefits:** Access all features of the Advanced IAM Service Package, plus extended support for sophisticated IAM requirements.
+- **Federated Identity Management:** Enable users to authenticate across multiple systems and domains effortlessly.
+- **Customizable SSO and Passwordless Options:** Streamline login experiences with flexible SSO and passwordless authentication for enhanced user convenience.
+- **Detailed Audit Trails and Reporting:** Receive comprehensive audit trails and reports for thorough monitoring and compliance.
+- **Continuous Compliance Monitoring:** Ensure consistent adherence to evolving IAM standards with automated compliance tracking.
+- **IAM Expert Consultation:** Benefit from one hour per week with a senior IAM engineer for ongoing support and advanced troubleshooting.
 
-The Premium Service Package offers a fully managed IT solution designed for complex environments and high-demand requirements.
+The Enterprise IAM Service Package delivers robust identity solutions and continuous security monitoring to support large-scale organizations.
 
-## Elite Service Package
+## Professional IAM Service Package
 
-Our **Elite Service Package** represents the pinnacle of our offerings, designed for large enterprises with unique IT needs. This package delivers custom enterprise solutions, leveraging our expertise for strategic IT support.
+Our **Professional IAM Service Package** is tailored for businesses that require dedicated IAM support and expert consultation to implement and optimize IAM frameworks.
 
 ### Key Features
 
-- **Enterprise IT Management:** Manage over 100 projects with our enterprise IT management services, providing essential oversight.
-- **Multi-Cloud Architecture and FinOps:** Implement multi-cloud architectures with optimized cost and performance.
-- **Data Lake Implementation and Management:** Enable efficient management of vast data through our data lake services.
-- **Advanced AI/ML Implementations:** Innovate with advanced AI and machine learning implementations.
-- **Red Team Exercises and Penetration Testing:** Identify vulnerabilities with quarterly red team exercises and testing.
-- **Digital Transformation Consulting:** Leverage technology for innovation with monthly consulting.
+- **All Enterprise Tier Benefits:** Enjoy all the benefits of the Enterprise IAM Service Package, along with premium consulting services.
+- **Custom IAM Solutions:** Receive bespoke IAM solutions to fit your unique infrastructure needs and security goals.
+- **Comprehensive Security Audits:** Gain peace of mind with monthly security audits by senior engineers to uncover and address potential vulnerabilities.
+- **Incident Management and Response Planning:** Prepare for security incidents with proactive response planning and support.
+- **Technical Leadership and IAM Strategy Consulting:** Access up to 4 hours per month of strategic consulting from senior IAM professionals.
 
-The Elite Service Package provides customizable, enterprise-grade solutions that empower businesses to tackle complex IT challenges and achieve strategic objectives.
+The Professional IAM Service Package is designed for businesses seeking advanced technical guidance and custom IAM solutions.
+
+## Premium IAM Service Package
+
+Our **Premium IAM Service Package** provides end-to-end IAM management and support, ideal for enterprises requiring extensive, fully managed IAM solutions.
+
+### Key Features
+
+- **Fully Managed IAM Services:** Experience hands-on IAM management for up to 100 projects, covering all aspects of identity and access control.
+- **Continuous Threat Detection and 24/7 Monitoring:** Protect your systems with round-the-clock monitoring and threat detection.
+- **Advanced Authentication Protocols:** Implement cutting-edge protocols, including JWT, OAuth2, and OIDC, for secure and flexible authentication.
+- **Compliance Audits and Penetration Testing:** Ensure your IAM framework is fortified with quarterly audits and penetration tests.
+- **Senior IAM Architect Support:** Gain up to 10 hours per month of consultation from an IAM architect to steer your security strategy.
+
+The Premium IAM Service Package is crafted for enterprises requiring comprehensive IAM management and high-level support.
 
 ---
 
-At Suresta, our mission is to equip you with the tools, expertise, and support necessary to succeed in an ever-evolving digital landscape. Whether you're starting out or optimizing your existing IT infrastructure, we have a solution tailored for you. Contact us today to learn more about how we can help your business thrive.
+At Suresta, our mission is to secure your business with IAM solutions tailored to your industry and organizational needs. Contact us today to learn more about our services and discover how Suresta can help your organization achieve seamless, secure, and scalable identity management.
 
---- 
+---
