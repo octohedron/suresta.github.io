@@ -27,7 +27,7 @@ items:
     offer:
       price: 43.00
       discount: ""
-      frequency: "por mes"
+      frequency: "por usuario/mes"
       text: "Facturado mensualmente"
     arguments:
       - icon: "eye"
@@ -50,7 +50,7 @@ items:
     offer:
       price: 97.00
       discount: ""
-      frequency: "por mes"
+      frequency: "por usuario/mes"
       text: "Facturado mensualmente"
     arguments:
       - icon: "bell-alert"

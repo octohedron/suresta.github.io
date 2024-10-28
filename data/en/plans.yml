@@ -27,7 +27,7 @@ items:
     offer:
       price: 43.00
       discount: ""
-      frequency: "per month"
+      frequency: "per user/month"
       text: "Billed monthly"
     arguments:
       - icon: "eye"
@@ -50,7 +50,7 @@ items:
     offer:
       price: 97.00
       discount: ""
-      frequency: "per month"
+      frequency: "per user/month"
       text: "Billed monthly"
     arguments:
       - icon: "bell-alert"
