@@ -40,7 +40,7 @@ sections:
   - block: prices
     content:
       heading:
-        title: "Flexible pricing options"
+        title: "Suscripciones flexibles"
       column: 6
       items: []
       background: false
