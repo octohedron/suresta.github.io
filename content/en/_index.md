@@ -37,13 +37,13 @@ sections:
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
-  - block: prices
-    content:
-      heading:
-        title: "Flexible pricing options"
-      column: 6
-      items: []
-      background: false
+  # - block: prices
+  #   content:
+  #     heading:
+  #       title: "Flexible pricing options"
+  #     column: 6
+  #     items: []
+  #     background: false
 
   - block: stats
     content:
@@ -130,7 +130,7 @@ sections:
       text: "What our clients are saying about our services"
       items:
         - name: "Satisfied Customer"
-          role: "Manager at GS"
+          role: "Manager at Banking Institution"
           image: "testimonial-2.jpg"
           text: "Our Cloud Enablement team brought in Suresta to manage a complex identity and access management application. Their technical expertise, covering SAML, OIDC, OAuth, Go, React, AWS serverless, and Azure AD, was exactly what we needed. Thanks to their contributions, we saw significant improvements in application stability, test coverage, and logging clarity. The team communicates effectively and is a pleasure to work with. In addition to their technical prowess, they are genuinely nice people that I highly recommend."
         - name: "Satisfied Customer"
