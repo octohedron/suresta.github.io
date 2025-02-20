@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: "Protect Access, Manage Identities: Tailored IAM Solutions for Your Business"
-      text: SIMPLE SUBSCRIPTION SERVICE, CANCEL ANY TIME.
+      text: EXPERT IAM CONSULTING & IMPLEMENTATION SERVICES FOR ENTERPRISE
       primary_action:
         text: Get Started
         url: /contact/
@@ -108,13 +108,14 @@ sections:
           button:
             text: Learn More about IAM Solutions
             url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
-        - title: Why a subscription?
-          text: Our subscription model provides flexibility and value in IAM management. Instead of high contractor fees or the long process of hiring internal staff, you get expert IAM services tailored to your needs.
+        - title: Why choose our consulting services?
+          text: Our expert consulting services provide comprehensive IAM solutions and cybersecurity expertise. We offer strategic guidance, custom implementation, and ongoing support to ensure your identity infrastructure meets enterprise standards.
           feature_icon: bolt
           features:
-            - "No long-term contracts or hidden fees"
-            - "No need for complex onboarding or training for new staff"
-            - "Services customized to your IAM requirements for as long as you need them"
+            - "Enterprise-grade IAM architecture and implementation"
+            - "Zero Trust security framework implementation"
+            - "Custom IAM solution development and integration"
+            - "Comprehensive security posture assessment"
           # Upload image to `assets/media/` and reference the filename here
           image: coffee.jpg
           button:
@@ -144,8 +145,8 @@ sections:
         padding: ["6rem", 0, 0, 0]
   - block: cta-card
     content:
-      title: "Get Started with a Free Consultation"
-      text: Contact us below
+      title: "Transform Your Enterprise Identity Security"
+      text: Schedule a consultation with our IAM experts
       button:
         text: Get Started
         url: /contact/
@@ -155,4 +156,3 @@ sections:
         css_class: "bg-primary-700"
         css_style: ""
 ---
-

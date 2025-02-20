@@ -11,7 +11,7 @@ sections:
   - block: hero
     content:
       title: "Protege Accesos, Gestiona Identidades: Soluciones IAM Adaptadas a Ti"
-      text: MODELO SIMPLIFICADO DE SUBSCRIPCION, CANCELA EN CUALQUIER MOMENTO.
+      text: SERVICIOS EXPERTOS DE CONSULTORÍA E IMPLEMENTACIÓN IAM PARA EMPRESAS
       primary_action:
         text: Get Started
         url: /contact/
@@ -108,13 +108,14 @@ sections:
           button:
             text: Learn More about IAM Solutions
             url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
-        - title: Why a subscription?
-          text: Our subscription model provides flexibility and value in IAM management. Instead of high contractor fees or the long process of hiring internal staff, you get expert IAM services tailored to your needs.
+        - title: ¿Por qué elegir nuestros servicios de consultoría?
+          text: Nuestros servicios de consultoría experta proporcionan soluciones IAM integrales y experiencia en ciberseguridad. Ofrecemos orientación estratégica, implementación personalizada y soporte continuo para garantizar que su infraestructura de identidad cumpla con los estándares empresariales.
           feature_icon: bolt
           features:
-            - "No long-term contracts or hidden fees"
-            - "No need for complex onboarding or training for new staff"
-            - "Services customized to your IAM requirements for as long as you need them"
+            - "Arquitectura e implementación IAM de nivel empresarial"
+            - "Implementación del marco de seguridad Zero Trust"
+            - "Desarrollo e integración de soluciones IAM personalizadas"
+            - "Evaluación integral de la postura de seguridad"
           # Upload image to `assets/media/` and reference the filename here
           image: coffee.jpg
           button:
@@ -143,8 +144,8 @@ sections:
         padding: ["6rem", 0, 0, 0]
   - block: cta-card
     content:
-      title: "Get Started with a Free Consultation"
-      text: Contact us below
+      title: "Transforme la Seguridad de Identidad de su Empresa"
+      text: Programe una consulta con nuestros expertos en IAM
       button:
         text: Get Started
         url: /contact/
@@ -154,4 +155,3 @@ sections:
         css_class: "bg-primary-700"
         css_style: ""
 ---
-

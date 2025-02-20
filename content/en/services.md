@@ -1,87 +1,73 @@
 ---
-
 title: "Our Services"
-description: "Explore the full range of Identity and Access Management (IAM) services offered by Suresta. From foundational IAM frameworks to comprehensive enterprise-grade solutions, we deliver tailored security services to meet the unique requirements of your business."
+description: "Expert IAM consulting and implementation services for enterprises. From strategic planning to custom solution development, we deliver comprehensive identity and access management solutions tailored to your organization's unique security requirements."
 type: "page"
+---
+
+At Suresta, we are enterprise IAM consultants and implementation experts specializing in securing your digital infrastructure through advanced identity and access management solutions. Our team of seasoned IAM professionals delivers strategic guidance, custom development, and comprehensive security services to protect your organization's critical assets and enable secure digital transformation.
+
+## Strategic IAM Consulting
+
+Our strategic consulting services help organizations architect and implement robust IAM frameworks aligned with business objectives and security requirements.
+
+### Key Services
+
+- **IAM Strategy Development:** Create comprehensive IAM roadmaps and architecture blueprints tailored to your enterprise needs
+- **Zero Trust Architecture Design:** Implement modern Zero Trust security frameworks for enhanced protection
+- **Security Posture Assessment:** Evaluate current IAM infrastructure and identify areas for improvement
+- **Compliance Framework Implementation:** Ensure adherence to regulatory requirements (GDPR, SOC 2, ISO 27001)
+- **Identity Governance Planning:** Develop policies and procedures for effective identity lifecycle management
+
+## Custom IAM Solution Development
+
+We design and implement custom IAM solutions that integrate seamlessly with your existing infrastructure while meeting specific security and operational requirements.
+
+### Key Services
+
+- **Custom IAM Platform Development:** Build tailored identity management solutions using modern technologies
+- **Legacy System Integration:** Connect and modernize existing identity infrastructure
+- **API Security Implementation:** Secure APIs with OAuth 2.0, JWT, and advanced authentication protocols
+- **Cloud IAM Architecture:** Design and implement cloud-native IAM solutions for AWS, Azure, and GCP
+- **Kubernetes Access Control:** Implement robust RBAC and service mesh security for container environments
+
+## Enterprise Implementation Services
+
+Our implementation services ensure successful deployment and integration of IAM solutions across your enterprise environment.
+
+### Key Services
+
+- **Federation Implementation:** Deploy enterprise-grade SSO solutions using SAML 2.0 and OIDC
+- **Privileged Access Management:** Implement secure PAM solutions for critical system access
+- **Multi-Factor Authentication:** Deploy advanced MFA solutions including biometric and passwordless options
+- **Directory Services Integration:** Unify identity management across Active Directory and cloud directories
+- **Identity Lifecycle Automation:** Streamline user provisioning and deprovisioning processes
+
+## Security Assessment & Compliance
+
+Comprehensive security assessment services to ensure your IAM infrastructure meets industry standards and compliance requirements.
+
+### Key Services
+
+- **Security Architecture Review:** Evaluate IAM infrastructure against industry best practices
+- **Penetration Testing:** Identify vulnerabilities in authentication and authorization systems
+- **Compliance Auditing:** Assess and document compliance with regulatory requirements
+- **Risk Assessment:** Evaluate and mitigate identity-related security risks
+- **Security Policy Development:** Create comprehensive IAM policies and procedures
+
+## Ongoing Support & Optimization
+
+We provide continuous support and optimization services to ensure your IAM infrastructure evolves with your business needs.
+
+### Key Services
+
+- **24/7 IAM Infrastructure Support:** Round-the-clock monitoring and incident response
+- **Performance Optimization:** Continuous improvement of IAM systems and processes
+- **Security Incident Response:** Expert handling of identity-related security incidents
+- **Training & Knowledge Transfer:** Comprehensive training for your technical teams
+- **Regular Security Reviews:** Periodic assessments and recommendations for enhancement
 
 ---
 
-At Suresta, we specialize in securing your digital environment with identity and access management (IAM) solutions designed to protect sensitive information, streamline user authentication, and enhance compliance. Whether you’re a startup prioritizing foundational security or an enterprise scaling its IAM infrastructure, our expert team is committed to supporting your business’s needs. Discover our service packages below to find the best fit for your organization.
-
-## Essential IAM Service Package
-
-Our **Essential IAM Service Package** is ideal for businesses aiming to establish fundamental identity and access controls. This package provides the essential tools and processes to manage user access and ensure basic security compliance.
-
-### Key Features
-
-- **User Authentication Setup:** Implement secure, basic authentication protocols to verify users’ identities.
-- **Access Control Policies:** Establish initial role-based access control (RBAC) policies to govern user permissions effectively.
-- **Basic SAML and OAuth2 Integration:** Simplify identity management with SAML and OAuth2 support for streamlined user sign-ins.
-- **Compliance Guidance:** Ensure adherence to foundational security standards with our compliance support and documentation resources.
-- **Free Consultation:** Enjoy one hour of free consultation per month for IAM guidance and insights.
-
-The Essential IAM Service Package provides a secure foundation for organizations just beginning to prioritize identity management.
-
-## Advanced IAM Service Package
-
-The **Advanced IAM Service Package** expands on the Essential Package, delivering comprehensive tools for businesses looking to strengthen security and streamline access management further.
-
-### Key Features
-
-- **All Essential Tier Benefits:** Includes all features from the Essential IAM Service Package, with additional options to enhance IAM capabilities.
-- **Multi-Factor Authentication (MFA):** Add an extra layer of security with customizable MFA solutions.
-- **Advanced Access Controls:** Implement both RBAC and attribute-based access control (ABAC) for more granular permission settings.
-- **Expanded SSO and API Integration:** Leverage single sign-on (SSO) and secure API integration for seamless user experiences across platforms.
-- **IAM Health Checks and Vulnerability Scanning:** Perform up to ten health checks per project and receive detailed reports for proactive security management.
-- **Developer Consultation:** One hour per month with an IAM consultant for best practices in identity management.
-
-The Advanced IAM Service Package empowers growing businesses with expanded control over identity and access, ensuring higher levels of security and functionality.
-
-## Enterprise IAM Service Package
-
-For larger businesses and enterprises, our **Enterprise IAM Service Package** offers advanced IAM tools and support for complex, multi-tiered environments.
-
-### Key Features
-
-- **All Advanced Tier Benefits:** Access all features of the Advanced IAM Service Package, plus extended support for sophisticated IAM requirements.
-- **Federated Identity Management:** Enable users to authenticate across multiple systems and domains effortlessly.
-- **Customizable SSO and Passwordless Options:** Streamline login experiences with flexible SSO and passwordless authentication for enhanced user convenience.
-- **Detailed Audit Trails and Reporting:** Receive comprehensive audit trails and reports for thorough monitoring and compliance.
-- **Continuous Compliance Monitoring:** Ensure consistent adherence to evolving IAM standards with automated compliance tracking.
-- **IAM Expert Consultation:** Benefit from one hour per week with a senior IAM engineer for ongoing support and advanced troubleshooting.
-
-The Enterprise IAM Service Package delivers robust identity solutions and continuous security monitoring to support large-scale organizations.
-
-## Professional IAM Service Package
-
-Our **Professional IAM Service Package** is tailored for businesses that require dedicated IAM support and expert consultation to implement and optimize IAM frameworks.
-
-### Key Features
-
-- **All Enterprise Tier Benefits:** Enjoy all the benefits of the Enterprise IAM Service Package, along with premium consulting services.
-- **Custom IAM Solutions:** Receive bespoke IAM solutions to fit your unique infrastructure needs and security goals.
-- **Comprehensive Security Audits:** Gain peace of mind with monthly security audits by senior engineers to uncover and address potential vulnerabilities.
-- **Incident Management and Response Planning:** Prepare for security incidents with proactive response planning and support.
-- **Technical Leadership and IAM Strategy Consulting:** Access up to 4 hours per month of strategic consulting from senior IAM professionals.
-
-The Professional IAM Service Package is designed for businesses seeking advanced technical guidance and custom IAM solutions.
-
-## Premium IAM Service Package
-
-Our **Premium IAM Service Package** provides end-to-end IAM management and support, ideal for enterprises requiring extensive, fully managed IAM solutions.
-
-### Key Features
-
-- **Fully Managed IAM Services:** Experience hands-on IAM management for up to 100 projects, covering all aspects of identity and access control.
-- **Continuous Threat Detection and 24/7 Monitoring:** Protect your systems with round-the-clock monitoring and threat detection.
-- **Advanced Authentication Protocols:** Implement cutting-edge protocols, including JWT, OAuth2, and OIDC, for secure and flexible authentication.
-- **Compliance Audits and Penetration Testing:** Ensure your IAM framework is fortified with quarterly audits and penetration tests.
-- **Senior IAM Architect Support:** Gain up to 10 hours per month of consultation from an IAM architect to steer your security strategy.
-
-The Premium IAM Service Package is crafted for enterprises requiring comprehensive IAM management and high-level support.
-
----
-
-At Suresta, our mission is to secure your business with IAM solutions tailored to your industry and organizational needs. Contact us today to learn more about our services and discover how Suresta can help your organization achieve seamless, secure, and scalable identity management.
+At Suresta, we combine deep technical expertise with strategic insight to deliver enterprise-grade IAM solutions. Our consulting services help organizations navigate the complexities of modern identity security while enabling secure digital transformation. Contact us to discuss how our IAM expertise can strengthen your organization's security posture and enable seamless access management.
 
 ---
