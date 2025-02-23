@@ -15,7 +15,7 @@ sections:
       text: "Fill out the form below, and we'll contact you shortly"
       email: operations@suresta.com
       phone: +34 641 49 41 53
-      appointment_url: 'https://calendly.com'
+      appointment_url: 'https://calendly.com/raisesystems/15min'
       address:
         street: Escriptor Abu Salt, 1
         city: Valencia
