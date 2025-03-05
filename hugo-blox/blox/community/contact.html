@@ -378,11 +378,36 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
       if (!crmSuccess) {
         let crmError = await crmResponse.json();
-        showPopup(`CRM Error: ${crmError.error || 'There was an error sending your message.'}`, false);
+        let errorMessage = 'There was an error sending your message.';
+        
+        // Handle specific error messages
+        if (crmError.message) {
+          errorMessage = crmError.message;
+          
+          // Format specific error messages to be more user-friendly
+          if (errorMessage.includes('e164 format')) {
+            errorMessage = 'Phone number should be in international format (e.g., +34612345678)';
+          }
+        } else if (crmError.error) {
+          errorMessage = crmError.error;
+        }
+        
+        // Display attributes that had errors if available
+        if (crmError.attributes && crmError.attributes.length > 0) {
+          errorMessage += ` (Fields with errors: ${crmError.attributes.join(', ')})`;
+        }
+        
+        showPopup(`Error: ${errorMessage}`, false);
       }
 
       if (!emailSuccess) {
-        showPopup('Email Error: There was an error sending your message.', false);
+        try {
+          let emailError = await emailResponse.json();
+          let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
+          showPopup(`Email Error: ${errorMessage}`, false);
+        } catch (e) {
+          showPopup('Email Error: There was an error sending your email.', false);
+        }
       }
 
       if (crmSuccess && emailSuccess) {
@@ -392,7 +417,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         showPopup('Message sent successfully!', true);
       }
     }).catch(error => {
-      showPopup('There was an error sending your message.', false);
+      console.error('Form submission error:', error);
+      showPopup(`Error: ${error.message || 'There was an error sending your message.'}`, false);
     });
   });
 });
