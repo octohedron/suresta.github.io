@@ -357,14 +357,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     // Perform both fetch requests and wait for their results
     Promise.all([
-      fetch('https://crm.suresta.com/public/api/v1/inboxes/wkkLU1Y1yG3NaRdnDj8ASb41/contacts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(data)
-      }),
       fetch('https://email.raise.systems/sendemail', {
         method: 'POST',
         body: formData,
@@ -372,27 +364,28 @@ document.getElementById('contact-form').addEventListener('submit', function(even
           'Accept': 'application/json'
         }
       })
-    ]).then(async ([crmResponse, emailResponse]) => {
-      let crmSuccess = crmResponse.ok;
+    ]).then(async ([emailResponse]) => {
       let emailSuccess = emailResponse.ok;
 
-      if (!crmSuccess) {
-        let crmError = await crmResponse.json();
-        showPopup(`CRM Error: ${crmError.error || 'There was an error sending your message.'}`, false);
-      }
-
       if (!emailSuccess) {
-        showPopup('Email Error: There was an error sending your message.', false);
+        try {
+          let emailError = await emailResponse.json();
+          let errorMessage = emailError.message || emailError.error || 'There was an error sending your email.';
+          showPopup(`Email Error: ${errorMessage}`, false);
+        } catch (e) {
+          showPopup('Email Error: There was an error sending your email.', false);
+        }
       }
 
-      if (crmSuccess && emailSuccess) {
+      if (emailSuccess) {
         form.reset();
         const inputs = form.querySelectorAll('input, textarea, button');
         inputs.forEach(input => input.disabled = true);
         showPopup('Message sent successfully!', true);
       }
     }).catch(error => {
-      showPopup('There was an error sending your message.', false);
+      console.error('Form submission error:', error);
+      showPopup(`Error: ${error.message || 'There was an error sending your message.'}`, false);
     });
   });
 });
