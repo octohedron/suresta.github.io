@@ -10,8 +10,8 @@ design:
 sections:
   - block: hero
     content:
-      title: "Full-Service Software Reliability Provider"
-      text: SIMPLE SUBSCRIPTION SERVICE, CANCEL ANY TIME.
+      title: "DevOps & Software Engineering Consultancy"
+      text: TRANSFORMING YOUR DEVELOPMENT LIFECYCLE WITH EXPERT GUIDANCE
       primary_action:
         text: Get Started
         url: /contact/
@@ -20,7 +20,7 @@ sections:
         text: Our services
         url: /services
       announcement:
-        text: "Announcing the world's first Site Reliability and Assurance Service Provider."
+        text: "Streamline, automate, and optimize your software delivery with our DevOps expertise."
         link:
           text: "Read more"
           url: "/blog/launching-suresta/"
@@ -37,152 +37,6 @@ sections:
           filename: bg-triangles.svg
           filters:
             brightness: 0.5
-  - block: prices
-    content:
-      heading:
-        title: "Flexible pricing options"
-      column: 6
-      items:
-        - title: "Basic"
-          text: "Start off with our free solutions and basic checks."
-          offer:
-            price: 0.00
-            discount: ""
-            frequency: "Free"
-            text: "Special offer"
-          arguments:
-            - icon: "eye"
-              text: "Basic observability tools"
-            - icon: "bell-alert"
-              text: "Simple alerts and notifications"
-            - icon: "document-text"
-              text: "Access to documentation resources"
-            - icon: "check-circle"
-              text: "Up to 3 automated health checks per project"
-            - icon: "shield-check"
-              text: "Up to 3 automated port scans per project"
-            - icon: "clock"
-              text: "1 hour of free consultation per month"
-          cta:
-            text: "Get Started"
-            url: "/contact"
-        - title: "Essential"
-          text: "All free tier benefits with additional essential features."
-          offer:
-            price: 43.00
-            discount: ""
-            frequency: "per month"
-            text: "Billed monthly"
-          arguments:
-            - icon: "eye"
-              text: "Storage capacity monitoring alerts"
-            - icon: "check-circle"
-              text: "Up to 10 automated health checks per project"
-            - icon: "shield-check"
-              text: "Basic vulnerability scanning for one website"
-            - icon: "puzzle-piece"
-              text: "Basic linting setup with pre-commit hooks"
-            - icon: "clock"
-              text: "1 hour per month of software developer consultation"
-            - icon: "clipboard-document-check"
-              text: "1 hour per month of code reviews by a senior engineer"
-          cta:
-            text: "Get Started"
-            url: "/contact"
-        - title: "Advanced"
-          text: "All Essential tier benefits with even more advanced features."
-          offer:
-            price: 97.00
-            discount: ""
-            frequency: "per month"
-            text: "Billed monthly"
-          arguments:
-            - icon: "bell-alert"
-              text: "Automated alerts setup for up to 2 projects"
-            - icon: "cloud"
-              text: "Basic cloud backup solutions included"
-            - icon: "circle-stack"
-              text: "Managed database clusters setup and support"
-            - icon: "cog"
-              text: "Simple CI/CD pipeline setup with GitHub Actions"
-            - icon: "cloud-arrow-up"
-              text: "Basic DevOps and cloud management services"
-            - icon: "shield-check"
-              text: "1 hour per month of security audits and senior software engineer consultation"
-          cta:
-            text: "Get Started"
-            url: "/contact"
-        - title: "Professional"
-          text: "Comprehensive consultation and IT support."
-          offer:
-            price: -1
-            discount: ""
-            frequency: "monthly or yearly"
-            text: "Custom contract"
-          arguments:
-            - icon: "academic-cap"
-              text: "Technical leadership and mentorship"
-            - icon: "puzzle-piece"
-              text: "Custom integrations and solutions"
-            - icon: "shield-check"
-              text: "Managed cybersecurity services"
-            - icon: "check-circle"
-              text: "Incident reports and post-mortem analysis"
-            - icon: "clock"
-              text: "1 hour per week of senior software engineer consultation"
-            - icon: "clipboard-document-list"
-              text: "1 hour per month of senior architect consultation and system reviews"
-          cta:
-            text: "Contact Us"
-            url: "/contact"
-        - title: "Premium"
-          text: "Comprehensive and tailored IT consulting."
-          offer:
-            price: -1
-            discount: ""
-            frequency: "monthly or yearly"
-            text: "Custom contract"
-          arguments:
-            - icon: "cloud"
-              text: "Cloud cost optimization and FinOps implementation"
-            - icon: "cog-8-tooth"
-              text: "Fully managed IT services for up to 100 projects"
-            - icon: "shield-check"
-              text: "SIEM solutions with 24/7 monitoring"
-            - icon: "server-stack"
-              text: "Multi-cloud management and support"
-            - icon: "code-bracket-square"
-              text: "Advanced Kubernetes management with service mesh"
-            - icon: "clipboard-document-check"
-              text: "40 hours per week of senior architect and technical leadership"
-          cta:
-            text: "Contact Us"
-            url: "/contact"
-        - title: "Elite"
-          text: "Custom enterprise solutions to fit your unique needs."
-          offer:
-            price: -1
-            discount: ""
-            frequency: "monthly or yearly"
-            text: "Custom contract"
-          arguments:
-            - icon: "building-office-2"
-              text: "Enterprise IT management for 100+ projects"
-            - icon: "cloud"
-              text: "Multi-cloud architecture and FinOps"
-            - icon: "circle-stack"
-              text: "Data lake implementation and management"
-            - icon: "light-bulb"
-              text: "Advanced AI/ML implementations"
-            - icon: "shield-check"
-              text: "Quarterly red team exercises and penetration testing"
-            - icon: "clock"
-              text: "Monthly digital transformation consulting"
-          cta:
-            text: "Contact Us"
-            url: "/contact"
-      background: false
-
 
   - block: stats
     content:
@@ -208,52 +62,52 @@ sections:
   - block: features
     id: features
     content:
-      title: Features
-      text: Our team offers dozens of technical and business services to suit your needs
+      title: Our Expertise
+      text: Our consultancy offers specialized expertise across the entire DevOps and software engineering spectrum
       items:
-        - name: Optimize Security
-          icon: magnifying-glass
-          description: Options include incident reports and post mortems, as well as tracing, automated monitoring, and other features to mitigate risk, employ proactive measures, and manage your exposure
-        - name: Resolve issues through specialists
-          icon: bolt
-          description: Discover on-call support and personalized assistance, as well as alert systems and observability tools to find and solve problems quickly
-        - name: Cloud
-          icon: sparkles
-          description: Manage cloud capacity, costs, and debugging in services like Azure, Google Cloud, AWS, and Kubernetes
-        - name: Coding Assistance
+        - name: DevOps Implementation
+          icon: cog
+          description: Expert guidance on implementing DevOps practices, CI/CD pipelines, and automation to streamline your software delivery process and increase deployment frequency
+        - name: Infrastructure as Code
           icon: code-bracket
-          description: Confer with our experts in languages like Golang, Python, Typescript, Javascript, Java, and others to troubleshoot and refactor your code
-        - name: Highly Rated
-          icon: star
-          description: World-class expertise, including projects with Goldman Sachs, The European Patent Office, and dozens of other industry leaders
-        - name: Personalize and Customize
-          icon: rectangle-group
-          description: Our world-class customer service team will work with you to find a subscription package that works for you and your needs, no more no less
+          description: Design and implementation of infrastructure as code solutions using tools like Terraform, Ansible, and CloudFormation to ensure consistent, repeatable deployments
+        - name: Cloud Architecture
+          icon: sparkles
+          description: Strategic consultation on cloud infrastructure design, optimization, and management across Azure, Google Cloud, AWS, and Kubernetes environments
+        - name: Site Reliability Engineering
+          icon: shield-check
+          description: Implementation of SRE practices including observability, incident response, and service level objectives to enhance system reliability and performance
+        - name: DevSecOps Integration
+          icon: lock-closed
+          description: Embedding security throughout your development lifecycle with automated security testing, compliance monitoring, and vulnerability management
+        - name: Agile Transformation
+          icon: arrow-path
+          description: Guidance on adopting agile methodologies and practices that complement your DevOps initiatives to improve team collaboration and delivery speed
   - block: cta-image-paragraph
     id: solutions
     content:
       items:
         - title: Who are we?
-          text: Suresta is software development consultancy and software services provider based in Valencia, Spain, specializing in site reliability engineering (SRE) for all types of software. The link between development and operations is critical, and we're here to help you build it.
+          text: Suresta is a DevOps and software engineering consultancy based in Valencia, Spain. We help organizations bridge the gap between development and operations, implementing modern practices like CI/CD, infrastructure as code, and site reliability engineering (SRE) to accelerate delivery while maintaining stability and quality.
           feature_icon: check
           features:
-            - "Bridge the gap between developers and operations"
-            - "Avoid outages"
-            - "Provide peace of mind on the integrity and realiability of your projects"
-            - "Balance reliability and progress"
+            - "Accelerate software delivery through automation and streamlined processes"
+            - "Improve system reliability and reduce downtime"
+            - "Enhance collaboration between development and operations teams"
+            - "Balance speed of innovation with operational stability"
 
           # Upload image to `assets/media/` and reference the filename here
           image: build-website.png
           button:
-            text: Read More about SRE
-            url: https://www.netapp.com/devops-solutions/what-is-site-reliability-engineering/
-        - title: Why a subscription?
-          text: Our unique payment model works differently than other firms and developers. Rather than the exorbatant fees of a contractor, or the daunting amount of time, training, and paperwork of onboarding an employee, we offer flexibility without sacrificing value
+            text: Learn More About DevOps
+            url: https://aws.amazon.com/devops/what-is-devops/
+        - title: Why choose our consultancy?
+          text: Our approach works differently than other firms and developers. We provide expert consultation tailored to your specific needs, offering flexibility and value without the overhead of hiring full-time employees or dealing with rigid service contracts.
           feature_icon: bolt
           features:
-            - "No contracts laden with obligations, contingincies, or high payments"
-            - "No HR paperwork or lengthy training for new employees"
-            - "Services fitted to your needs, for as long as you need it"
+            - "Personalized solutions based on your specific project requirements"
+            - "Access to specialized expertise without long-term commitments"
+            - "Flexible engagement models adapted to your project timeline and scope"
           # Upload image to `assets/media/` and reference the filename here
           image: coffee.jpg
           button:
@@ -282,8 +136,8 @@ sections:
         padding: ["6rem", 0, 0, 0]
   - block: cta-card
     content:
-      title: "Get Started with a Free Consultation"
-      text: Contact us below
+      title: "Get Started with a Consultation"
+      text: Contact us to discuss your project needs
       button:
         text: Get Started
         url: /contact/
@@ -293,4 +147,3 @@ sections:
         css_class: "bg-primary-700"
         css_style: ""
 ---
-

@@ -145,6 +145,21 @@
         />
       </div>
       <div class="mb-4">
+        <label class="block mb-2" for="inputProjectDetails"
+          >Project Details{{ if in $required_fields "project_details" }}
+            <span class="text-red-500">*</span>
+          {{ end }}</label
+        >
+        <textarea
+          name="project_details"
+          class="w-full p-2 border border-gray-300 rounded"
+          id="inputProjectDetails"
+          rows="3"
+          placeholder="Please describe your project, including scope, timeline, and specific requirements"
+          {{ if in $required_fields "project_details" }}required{{ end }}
+        ></textarea>
+      </div>
+      <div class="mb-4">
         <label class="block mb-2" for="inputMessage"
           >{{ i18n "contact_message" }}{{ if in $required_fields "message" }}
             <span class="text-red-500">*</span>
@@ -154,8 +169,8 @@
           name="message"
           class="w-full p-2 border border-gray-300 rounded"
           id="inputMessage"
-          rows="5"
-          placeholder="{{ i18n "contact_message" | default "Message" }}"
+          rows="3"
+          placeholder="{{ i18n "contact_message" | default "Additional information or questions" }}"
           {{ if in $required_fields "message" }}required{{ end }}
         ></textarea>
       </div>
@@ -351,6 +366,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         country: formData.get('country'),
         city: formData.get('city'),
         subject: formData.get('subject'),
+        project_details: formData.get('project_details'),
         message: formData.get('message')
       }
     };

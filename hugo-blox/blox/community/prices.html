@@ -3,9 +3,6 @@
 {{ $block := .wcBlock }}
 {{ $data := $block.content }}
 
-{{ $lang := site.Language.Lang }}
-{{ $items := index site.Data $lang "plans" "items" }}
-
 <section
   class="block-prices py-16 {{- with $data.background }}block-bg{{ end }}"
 >
@@ -16,235 +13,50 @@
       >
         {{ . }}
       </h2>
+    {{ else }}
+      <h2
+        class="text-5xl font-extrabold text-center mb-12 text-gray-900 dark:text-white"
+      >
+        Our Approach to Pricing
+      </h2>
     {{ end }}
 
-
-    <div
-      class="box bg-white sm:bg-purple-900 dark:bg-gray-800 sm:shadow-lg p-0 sm:p-1"
-    >
-      <div
-        class="bg-white sm:bg-blue-200 dark:bg-blue-800 p-0 sm:p-3 sm:shadow-lg mb-1"
-      >
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div
-            class="hidden sm:flex bg-gray-50 dark:bg-gray-900 p-4 shadow-md items-center justify-center"
-          >
-            <div class="flex justify-between items-center w-full">
-              <label
-                for="increase-price"
-                class="text-lg font-medium text-gray-900 dark:text-gray-100"
-              >
-                <span class="block lg:hidden">Commander</span>
-                <span class="hidden lg:block">Incident Commander</span>
-              </label>
-              <input
-                type="checkbox"
-                id="increase-price"
-                class="price-modifier h-8 w-8 text-blue-600 focus:ring-blue-500 border-gray-300 shadow-md"
-              />
-            </div>
-          </div>
-          <div
-            class="hidden sm:flex bg-gray-100 dark:bg-gray-900 p-4 shadow-md items-center justify-center"
-          >
-            <div class="flex justify-between items-center w-full">
-              <label
-                for="add-base-price"
-                class="text-lg font-medium text-gray-900 dark:text-gray-100"
-              >
-                <span class="block lg:hidden">Alerting</span>
-                <span class="hidden lg:block">Alerting Systems</span>
-              </label>
-              <input
-                type="checkbox"
-                id="add-base-price"
-                class="price-modifier h-8 w-8 text-gray-600 focus:ring-gray-500 border-gray-300 shadow-md"
-              />
-            </div>
-          </div>
-          <div
-            class="hidden sm:flex bg-gray-200 dark:bg-gray-900 p-4 shadow-md items-center justify-center"
-          >
-            <div class="flex justify-between items-center w-full">
-              <label
-                for="extra-cost"
-                class="text-lg font-medium text-gray-900 dark:text-gray-100"
-              >
-                <span class="block lg:hidden">SREs</span>
-                <span class="hidden lg:block">Dedicated SREs</span>
-              </label>
-              <input
-                type="number"
-                id="extra-cost"
-                class="price-modifier h-12 w-24 text-xl text-center text-gray-900 dark:text-black bg-gray-300 border border-gray-900 dark:border-gray-500 focus:ring-yellow-500 focus:border-yellow-500"
-                min="0"
-                step="1"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {{- $column := 3 -}}
-      {{- with $data.column -}}
-        {{- $column = . -}}
-      {{- end -}}
-      {{- if $items }}
-        <div
-          class="grid gap-1 lg:grid-cols-{{ $column }} md:grid-cols-2 sm:grid-cols-1"
+    <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+        At Suresta, we believe in transparent and flexible pricing that reflects the unique needs of each project. Rather than offering fixed-price packages, we provide customized quotes based on:
+      </p>
+      
+      <ul class="list-none space-y-4 mb-8">
+        <li class="flex items-start">
+          {{ partial "functions/get_icon.html" (dict "name" "document-magnifying-glass" "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2 text-blue-600\"") }}
+          <span class="text-gray-700 dark:text-gray-300">The scope and complexity of your specific requirements</span>
+        </li>
+        <li class="flex items-start">
+          {{ partial "functions/get_icon.html" (dict "name" "clock" "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2 text-blue-600\"") }}
+          <span class="text-gray-700 dark:text-gray-300">The duration and intensity of the engagement</span>
+        </li>
+        <li class="flex items-start">
+          {{ partial "functions/get_icon.html" (dict "name" "academic-cap" "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2 text-blue-600\"") }}
+          <span class="text-gray-700 dark:text-gray-300">The level of expertise required</span>
+        </li>
+        <li class="flex items-start">
+          {{ partial "functions/get_icon.html" (dict "name" "chart-bar" "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2 text-blue-600\"") }}
+          <span class="text-gray-700 dark:text-gray-300">The value our services will bring to your business</span>
+        </li>
+      </ul>
+      
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">
+        After an initial consultation to understand your needs, we'll provide a detailed proposal outlining our recommended approach and associated costs. This ensures you receive a solution that's perfectly tailored to your situation and delivers maximum value.
+      </p>
+      
+      <div class="text-center">
+        <a
+          href="/contact/"
+          class="inline-block bg-blue-600 text-white px-6 py-3 shadow-lg hover:bg-blue-700 transition duration-300 rounded-lg"
         >
-          {{ range $index, $item := $items }}
-            {{- $tag := cond (ne $item.title "") "h3" "h2" -}}
-            <div
-              class="relative w-full {{ if eq $index 0 }}
-                bg-green-100 border-green-500 dark:bg-gray-900
-              {{ else }}
-                bg-white dark:bg-gray-800
-              {{ end }}
-               shadow-lg overflow-hidden transform transition-transform duration-300 hover:bg-gray-100 hover:border-gray-300 hover:text-black"
-            >
-              <div
-                class="item flex flex-col justify-between h-full {{- with $item.is_primary }}
-                  item-primary
-                {{ end }} p-2"
-              >
-                <header class="mb-6 text-center">
-                  {{- with $item.badge }}
-                    <span
-                      class="bg-{{ if eq $index 0 }}
-                        green-500
-                      {{ else }}
-                        yellow-500
-                      {{ end }} text-white px-3 py-1 text-sm font-semibold inline-block shadow-md"
-                      >{{ . }}</span
-                    >
-                  {{ end -}}
-                  {{- with $item.title }}
-                    {{- if eq $index 0 -}}
-                      {{- $titleColor := "green-900" -}}
-                      {{- printf "<%s class='text-3xl font-bold mt-4 text-%s'>" $tag $titleColor | safeHTML -}}
-                    {{ else }}
-                      {{- printf "<%s class='text-3xl font-bold mt-4'>" $tag | safeHTML -}}
-                    {{- end -}}
-                    {{ . }}
-                    {{- printf "</%s>" $tag | safeHTML -}}
-                  {{ end -}}
-                  {{ with $item.text }}
-                    <p class="text-gray-600 dark:text-gray-400 mt-2">{{ . }}</p>
-                  {{ end }}
-                  {{ with $item.offer }}
-                    <div class="price mt-6 mb-4">
-                      <span
-                        class="price-value text-3xl font-extrabold"
-                        data-original-price="{{ .price }}"
-                        >{{ .price }} €</span
-                      >
-                      {{- if .discount }}
-                        <span class="text-sm text-red-500 ml-2"
-                          >{{ .discount }}</span
-                        >
-                      {{ end -}}
-                      {{- if .frequency }}
-                        <span
-                          class="text-sm text-gray-600 dark:text-gray-400 block"
-                          >{{ .frequency }}</span
-                        >
-                      {{ end -}}
-                    </div>
-                    {{ with .text }}
-                      <p class="text-gray-500 dark:text-gray-400 mt-2">
-                        {{ . }}
-                      </p>
-                    {{ end }}
-                  {{ end }}
-                </header>
-
-                {{- with $item.arguments }}
-                  <div class="content mb-6 flex-grow">
-                    <ul class="list-none space-y-4">
-                      {{- range $index, $argument := . }}
-                        <li
-                          class="flex items-start {{ if gt $index 2 }}
-                            hidden sm:flex
-                          {{ end }}"
-                        >
-                          {{- with $argument.icon }}
-                            {{ partial "functions/get_icon.html" (dict "name" . "pack" "hero" "attributes" "class=\"w-6 h-6 mr-2\"") }}
-                          {{ end -}}
-                          <span>{{ $argument.text }}</span>
-                        </li>
-                      {{ end -}}
-                    </ul>
-                  </div>
-                {{ end -}}
-
-                {{- with $item.cta }}
-                  <footer class="mt-6 text-center">
-                    <a
-                      href="{{ .url }}"
-                      class="inline-block bg-blue-600 text-white px-6 py-3 shadow-lg hover:bg-blue-700 transition duration-300"
-                      >{{ .text }}</a
-                    >
-                  </footer>
-                {{ end -}}
-
-              </div>
-            </div>
-          {{ end }}
-        </div>
-      {{ else }}
-        <p class="text-center text-gray-500 dark:text-gray-400">
-          No items found
-        </p>
-      {{ end -}}
+          Contact Us for a Consultation
+        </a>
+      </div>
     </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const priceModifiers = document.querySelectorAll(".price-modifier");
-    const priceElements = document.querySelectorAll(".price-value");
-
-    function updatePrices() {
-      const increasePrice = document.getElementById("increase-price").checked;
-      const addBasePrice = document.getElementById("add-base-price").checked;
-      const extraCost =
-        parseInt(document.getElementById("extra-cost").value, 10) || 0;
-
-      priceElements.forEach(function (priceElement, index) {
-        const originalPrice = parseFloat(priceElement.dataset.originalPrice);
-        let newPrice = originalPrice;
-
-        if (increasePrice) {
-          newPrice *= 1.2;
-        }
-
-        if (addBasePrice && index > 0 && index < 4) {
-          newPrice += 500;
-        }
-
-        newPrice += extraCost * 2550;
-
-        if (increasePrice) {
-          newPrice *= 1.5;
-        }
-        if (index > 0) {
-          priceElement.textContent = newPrice.toFixed(2) + "  €";
-        }
-
-        if (index > 2) {
-          priceElement.textContent = "-";
-        } else if (extraCost <= 0) {
-          document.getElementById("extra-cost").textContent = "0";
-        }
-      });
-    }
-
-    priceModifiers.forEach(function (modifier) {
-      modifier.addEventListener("input", updatePrices);
-    });
-
-    updatePrices();
-  });
-</script>

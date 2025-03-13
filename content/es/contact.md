@@ -7,8 +7,8 @@ sections:
     id: contact
     content:
       title: Contact
-      subtitle: ''
-      text: ''
+      subtitle: 'Get in touch for a consultation'
+      text: "Fill out the form below with details about your project needs, and we'll contact you to schedule a consultation"
       email: operations@suresta.com
       phone: +34 641 49 41 53
       appointment_url: 'https://calendly.com'
@@ -37,6 +37,7 @@ sections:
       coordinates:
         latitude: '37.4275'
         longitude: '-122.1697'
+      required_fields: ['first_name', 'last_name', 'email', 'subject', 'message', 'company', 'project_details']
     design:
       columns: '1'
 ---
